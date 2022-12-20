@@ -9,14 +9,16 @@ const Header = () => {
             <HeaderBG />
             <Intro>
                 <Pic>
-                    <img style={{ borderRadius: "50%" }} src={profilePic} alt="" />
+                    <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
                     <img src={border} alt="Border" />
                 </Pic>
 
-                <h1>HI, I'M FILIP! <span role="img" aria-label="wave">👋</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio ipsum, congue nec facilisis at, lobortis sit amet lectus. Pellentesque quis sapien neque. Cras convallis eleifend leo id viverra.
-                </p>
+                <TextContainer>
+                    <h1>HI, I'M FILIP! <span role="img" aria-label="wave">👋</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio ipsum, congue nec facilisis at, lobortis sit amet lectus. Pellentesque quis sapien neque. Cras convallis eleifend leo id viverra.
+                    </p>
+                </TextContainer>
             </Intro>
         </Head>
     )
@@ -36,8 +38,22 @@ const HeaderBG = styled.div`
     transform-origin: top left;
 `
 
-const Intro = styled.div`
+const TextContainer = styled.div`
     position: relative;
+    width: 520px;
+    left: 220px;
+
+    & > h1 {
+        font-size: 62px;
+        margin: 0;
+    }
+`
+
+const Intro = styled.div`
+    position: absolute;
+    top: 220px;
+    left: 20vw;
+    margin: 0;
     color: #0f0f0f;
 
     & > h1 {
@@ -51,7 +67,7 @@ const Pic = styled.div`
 
     & > img {
         height: 180px;
-        position: relative;
+        position: absolute;
     }
 `
 
