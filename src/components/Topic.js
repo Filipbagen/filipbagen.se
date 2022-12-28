@@ -20,9 +20,9 @@ const Box = styled.div`
     align-items: center;
     flex-direction: column;
 
-    position: relative;
-    bottom: 120px;
-    height: 220px;
+    /* position: relative; */
+    /* bottom: 120px; */
+    /* height: 220px; */
     width: 240px;
     background-color: white;
     margin: 18px;
@@ -51,4 +51,8 @@ const Box = styled.div`
         text-align: center;
         font-size: 14px;
     }
+
+    &:hover {
+        size: 110%;
+  }
 `

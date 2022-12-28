@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
     return (
         <Container>
-            <Box />
+            <h4>Designed and built by me</h4>
         </Container>
     )
 }
@@ -13,16 +13,6 @@ export default Footer
 
 // Style
 const Container = styled.div`
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 36px;
-`
-
-const Box = styled.div`
-    height: 290px;
-    width: 95vw;
-    background-color: #B4DAF9;
-    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 26px;
 `

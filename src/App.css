@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("font/SF-Pro-Text-Regular.otf");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'SF Pro Text', sans-serif;
   line-height: 1.4;
 }
 
