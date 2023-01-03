@@ -5,7 +5,7 @@ import profilePic from "../img/profile.jpg"
 import hero from '../img/hero.png'
 
 // Components
-// import Buttons from "./Buttons"
+import Buttons from "./Buttons"
 
 const HeroSection = () => {
 
@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <Hero src={hero} alt="background" />
             </Head>
 
-            {/* <Buttons /> */}
+            <Buttons />
         </Container>
     )
 }
