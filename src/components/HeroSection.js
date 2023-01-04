@@ -58,7 +58,6 @@ const Head = styled.header`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 
     border-radius: 20px;
     height: 90vh;

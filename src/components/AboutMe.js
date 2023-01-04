@@ -35,11 +35,7 @@ const AboutMe = () => {
                     Praesent pharetra. In consequat felis in tellus. In mi enim,
                     rhoncus ullamcorper, sagittis at, placerat eget, mauris.
                     Suspendisse auctor erat at ipsum. Aliquam vitae tortor i
-                    d massa tincidunt eleifend. <br /><br /> In hac habitasse platea dictumst.
-                    Mauris rutrum enim vitae mauris. Proin mattis eleifend pede.
-                    Sed pretium ante sit amet elit. Quisque pede tellus, dictum eget,
-                    dapibus ac, sodales dictum, lectus. Pellentesque mi dui, molestie
-                    sit amet, adipiscing id, iaculis quis, arcu. Nulla tellus
+                    d massa tincidunt eleifend.
                 </TextBox>
 
             </Container>
@@ -66,11 +62,11 @@ const Side = styled.div`
 `
 
 const SmallTitle = styled.h3`
-    /* text-align: right; */
+    text-align: right;
 `
 
 const TextBox = styled.p`
-    max-width: 1000px;
+    max-width: 800px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);

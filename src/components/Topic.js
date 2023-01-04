@@ -5,7 +5,7 @@ const Topic = (props) => {
     return (
         <Box>
             <h2>{props.emoji}</h2>
-            <h1>{props.title}</h1>
+            <h1>{props.title.toUpperCase()}</h1>
             <p>{props.text}</p>
         </Box>
     )
@@ -22,7 +22,7 @@ const Box = styled.div`
     flex-direction: column;
 
     position: relative;
-    bottom: 80px;
+    bottom: 180px;
     height: 220px;
     width: 240px;
     background-color: white;
