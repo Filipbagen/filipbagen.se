@@ -15,19 +15,20 @@ export default Topic
 
 // Style
 const Box = styled.div`
+    transition: .2s;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    /* position: relative; */
-    /* bottom: 120px; */
-    /* height: 220px; */
+    position: relative;
+    bottom: 80px;
+    height: 220px;
     width: 240px;
     background-color: white;
-    margin: 18px;
+    margin: 24px;
     padding: 0 14px 14px 14px;
-    border-radius: 12px;
+    border-radius: 20px;
 
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
@@ -35,24 +36,24 @@ const Box = styled.div`
     & > h2 {    // Emoji
         font-size: 60px;
         position: relative;
-        /* top: 32px; */
+        top: 12px;
         margin: 0;
     }
 
     & > h1 {    // Title
         position: relative;
-        bottom: 10px;
+        top: 6px;
         margin: 0;
     }
 
     & > p {     // Body text
         position: relative;
-        bottom: 8px;
         text-align: center;
         font-size: 14px;
     }
 
     &:hover {
-        size: 110%;
+        transform: scale(1.03);
+        cursor: pointer;
   }
 `

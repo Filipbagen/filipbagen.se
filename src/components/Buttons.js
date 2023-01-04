@@ -7,13 +7,10 @@ import Topic from "./Topic"
 
 const Buttons = () => {
 
-    // {results.map(user => <li key={user.id}>{user.login.username} - {user.login.email}</li>)}
-
-
     return (
         <div>
             <Container>
-                {buttonData.map(data => (<Topic emoji={data.emoji} title={data.title} text={data.text} />))}
+                {buttonData.map(data => (<Topic emoji={data.emoji} title={data.title} text={data.text} key={data.emoji} />))}
             </Container>
         </div>
     )

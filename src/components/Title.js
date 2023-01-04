@@ -18,4 +18,5 @@ const Heading = styled.h1`
     opacity: .03;
     font-size: 200px;
     white-space: nowrap;
+    overflow: hidden;
 `

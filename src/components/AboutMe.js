@@ -66,7 +66,7 @@ const Side = styled.div`
 `
 
 const SmallTitle = styled.h3`
-    text-align: right;
+    /* text-align: right; */
 `
 
 const TextBox = styled.p`

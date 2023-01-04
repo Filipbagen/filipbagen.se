@@ -10,27 +10,29 @@ import Buttons from "./Buttons"
 const HeroSection = () => {
 
     return (
-        <Container>
-            <Head>
-                <Intro>
-                    <Pic>
-                        <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
-                        {/* <img src={border} alt="Border" /> */}
-                    </Pic>
+        <div>
+            <Container>
 
-                    <TextContainer>
-                        <h1>HI, I'M FILIP! <span role="img" aria-label="wave">👋</span></h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio ipsum, congue nec facilisis at, lobortis sit amet lectus. Pellentesque quis sapien neque. Cras convallis eleifend leo id viverra.
-                        </p>
-                    </TextContainer>
-                </Intro>
+                <Head>
+                    <Intro>
+                        <Pic>
+                            <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
+                            {/* <img src={border} alt="Border" /> */}
+                        </Pic>
 
-                <Hero src={hero} alt="background" />
-            </Head>
+                        <TextContainer>
+                            <h1>HI, I'M FILIP! <span role="img" aria-label="wave">👋</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio ipsum, congue nec facilisis at, lobortis sit amet lectus. Pellentesque quis sapien neque. Cras convallis eleifend leo id viverra.
+                            </p>
+                        </TextContainer>
+                    </Intro>
+                </Head>
+
+            </Container>
 
             <Buttons />
-        </Container>
+        </div>
     )
 }
 
@@ -48,17 +50,20 @@ const Container = styled.div`
 `
 
 const Head = styled.header`
-    border-radius: 20px;
-    height: 80vh;
-    width: 98vw;
-    overflow: hidden;
-`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-const Hero = styled.img`
+    background-image: url(${hero});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: contain;
+    position: relative;
+
+    border-radius: 20px;
+    height: 90vh;
+    width: 98vw;
+    overflow: hidden;
 `
 
 const TextContainer = styled.div`
@@ -72,8 +77,11 @@ const TextContainer = styled.div`
 
 const Intro = styled.div`
     width: 800px;
+    position: relative;
+    bottom: 60px;
 
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     color: #0f0f0f;
 
