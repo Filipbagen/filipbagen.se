@@ -3,18 +3,19 @@ import styled from "styled-components"
 
 // Components
 import Title from "./Title"
+import Tag from "./Tag"
 
 const AboutMe = () => {
 
     return (
         <div>
-            <Title
+            {/* <Title
                 title='👨🏽‍💻 ABOUT ME'
-            />
+            /> */}
 
             <Container>
 
-                <Side>
+                {/* <Side>
                     <SmallTitle>
                         MY <br />BIOGRAPHY
                     </SmallTitle>
@@ -22,20 +23,26 @@ const AboutMe = () => {
                     <Button>
                         <p>DOWNLOAD CV</p>
                     </Button>
-                </Side>
+                </Side> */}
 
 
                 <TextBox>
-                    Vestibulum vel metus. Donec sagittis velit vel augue.
-                    Fusce in nisl vitae massa venenatis rhoncus. Praesent
-                    orci velit, lobortis eget, suscipit semper, congue eu,
-                    est. Quisque malesuada volutpat enim. Vestibulum leo
-                    sem, molestie a, mattis bibendum, feugiat facilisis, nisl.
-                    Nam scelerisque odio. Suspendisse fermentum faucibus felis.
-                    Praesent pharetra. In consequat felis in tellus. In mi enim,
-                    rhoncus ullamcorper, sagittis at, placerat eget, mauris.
-                    Suspendisse auctor erat at ipsum. Aliquam vitae tortor i
-                    d massa tincidunt eleifend.
+                    <Tag title={'👀 About Me'} />
+                    <h1>WHO AM I?</h1>
+
+                    <p>
+                        Vestibulum vel metus. Donec sagittis velit vel augue.
+                        Fusce in nisl vitae massa venenatis rhoncus. Praesent
+                        orci velit, lobortis eget, suscipit semper, congue eu,
+                        est. Quisque malesuada volutpat enim. Vestibulum leo
+                        sem, molestie a, mattis bibendum, feugiat facilisis, nisl.
+                        Nam scelerisque odio. Suspendisse fermentum faucibus felis.
+                        Praesent pharetra. In consequat felis in tellus. In mi enim,
+                        rhoncus ullamcorper, sagittis at, placerat eget, mauris.
+                        Suspendisse auctor erat at ipsum. Aliquam vitae tortor i
+                        d massa tincidunt eleifend.
+                    </p>
+
                 </TextBox>
 
             </Container>
@@ -54,18 +61,12 @@ const Container = styled.div`
     width: 100vw;
 `
 
-const Side = styled.div`
+const TextBox = styled.div`
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-`
 
-const SmallTitle = styled.h3`
-    text-align: right;
-`
-
-const TextBox = styled.p`
     max-width: 800px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
@@ -73,21 +74,16 @@ const TextBox = styled.p`
     padding: 34px;
     border-radius: 18px;
     line-height: 1.8;
-    margin-left: 30px;
-`
 
-const Button = styled.div`
-    background-color: #3D7CCE;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 
-    & > p {
-        margin: 0;
-        white-space: nowrap;
-        color: white;
-    }
+& > h1 {
+    margin: 0;
+    font-size: 56px;
+    background: -webkit-linear-gradient(left, #75ACF3, #548FDD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 `
