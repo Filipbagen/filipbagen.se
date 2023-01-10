@@ -13,6 +13,7 @@ export default Footer
 
 // Style
 const Container = styled.div`
+    color: white;
     text-align: center;
     margin-bottom: 26px;
 `

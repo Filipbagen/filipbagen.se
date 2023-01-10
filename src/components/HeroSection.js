@@ -5,21 +5,26 @@ import profilePic from "../img/profile.jpg"
 import hero from '../img/hero.svg'
 
 // Components
-
+import NavBar from "./NavBar"
 
 const HeroSection = () => {
 
     return (
-        <Head>
-            <Intro>
-                <Pic>
-                    <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
-                    {/* <img src={border} alt="Border" /> */}
-                </Pic>
+        <div>
+            <NavBar />
 
-                <h1>HI, I'M FILIP!</h1>
-            </Intro>
-        </Head>
+            <Head>
+                <Intro>
+                    <Pic>
+                        <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
+                        {/* <img src={border} alt="Border" /> */}
+                    </Pic>
+
+                    <h1>HI, I'M FILIP!</h1>
+                </Intro>
+            </Head>
+        </div>
+
     )
 }
 

@@ -4,13 +4,13 @@ import styled from "styled-components"
 // Components
 import Tag from "./Tag"
 
-const AboutMe = () => {
+const Skills = () => {
 
     return (
         <Container>
             <TextBox>
-                <Tag title={'👀 About Me'} />
-                <h1>WHO AM I?</h1>
+                <Tag title={'🎯 Skills'} />
+                <h1>WHAT CAN I DO?</h1>
 
                 <p>
                     Vestibulum vel metus. Donec sagittis velit vel augue.
@@ -30,10 +30,12 @@ const AboutMe = () => {
     )
 }
 
-export default AboutMe
+export default Skills
 
 // Style
 const Container = styled.div`
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
