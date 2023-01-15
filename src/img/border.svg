@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 441 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"><path d="M244.992,9.576c110.418,38.279 172.1,106.139 188.444,221.855c7.812,55.31 -16.045,94.815 -47.607,126.897c-93.384,94.923 -254.001,49.156 -265.754,-7.088c-11.997,-57.411 -36.644,25.934 -102.654,-119.809c-15.066,-33.264 -19.013,-87.537 11.43,-108.425c55.208,-37.881 147.663,-137.17 216.141,-113.43Z" style="fill:none;stroke:url(#_Linear1);stroke-width:11.91px;"/><defs><linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(428.977,0,0,407.172,5.95313,209.539)"><stop offset="0" style="stop-color:#ffeab4;stop-opacity:1"/><stop offset="1" style="stop-color:#ffd15c;stop-opacity:1"/></linearGradient></defs></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%"
+    height="100%" viewBox="0 0 1303 1154" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path
+        d="M695.222,27.11c312.617,108.379 541.655,304.683 587.929,632.301c22.117,156.594 -90.427,274.585 -189.187,355.093c-258.897,211.051 -655.941,117.191 -689.217,-42.046c-33.966,-162.545 -230.132,-72.196 -353.828,-317.225c-46.592,-92.295 -53.829,-247.837 32.362,-306.976c156.304,-107.248 418.066,-388.36 611.941,-321.147Zm-11.041,31.85c-69.218,-23.997 -147.479,4.766 -226.185,50.428c-131.517,76.302 -262.394,202.681 -355.644,266.664c-27.258,18.703 -41.592,50.234 -47.949,85.249c-10.781,59.387 1.617,129.236 26.608,178.741c68.961,136.604 163.131,159.841 233.476,190.143c60.767,26.176 106.899,57.096 123.257,135.378c5.177,24.776 22.614,46.856 47.308,66.073c28.717,22.347 67.09,40.33 111.237,52.745c137.592,38.692 330.373,23.015 476.376,-96.005c90.689,-73.929 197.418,-180.453 177.108,-324.251c-44.394,-314.307 -265.677,-501.19 -565.592,-605.165Z"
+        style="fill:url(#_Linear1);" />
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1214.53,0,0,1152.79,18.451,593.252)">
+            <stop offset="0" style="stop-color:#b3cff2;stop-opacity:1" />
+            <stop offset="1" style="stop-color:#3ea5e0;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+</svg>

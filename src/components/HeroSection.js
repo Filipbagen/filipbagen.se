@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import profilePic from "../img/profile.jpg"
-// import border from "../img/border.svg"
+import border from "../img/border.svg"
 import hero from '../img/hero.svg'
+import handwritten from '../img/handwritten.svg'
 
 // Components
 import NavBar from "./NavBar"
@@ -16,11 +17,11 @@ const HeroSection = () => {
             <Head>
                 <Intro>
                     <Pic>
-                        <img style={{ borderRadius: "50%" }} src={profilePic} alt="portrait" />
-                        {/* <img src={border} alt="Border" /> */}
+                        <Border />
+                        <Profile />
                     </Pic>
 
-                    <h1>HI, I'M FILIP!</h1>
+                    <Handwritten src={handwritten} alt="" />
                 </Intro>
             </Head>
         </div>
@@ -52,7 +53,7 @@ const Intro = styled.div`
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     color: #0f0f0f;
 
     & > h1 {
@@ -62,9 +63,33 @@ const Intro = styled.div`
 `
 
 const Pic = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 
-    & > img {
-        height: 180px;
-        /* position: absolute; */
+    & > div {
+        background-position: center;
+        background-repeat: no-repeat;
     }
+`
+
+const Border = styled.div`
+    position: absolute;
+    background-image: url(${border});
+    height: 268px;
+    width: 268px;
+`
+
+const Profile = styled.div`
+    background-image: url(${profilePic});
+    background-size: cover;
+    border-radius: 50%;
+    height: 210px;
+    width: 210px;
+`
+
+const Handwritten = styled.img`
+    height: 100px;
+    margin-left: 60px;
 `
