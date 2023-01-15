@@ -3,6 +3,10 @@ import styled from "styled-components"
 
 // Components
 import Tag from "./Tag"
+import Skill from "./Skill"
+
+// Database
+import { skills } from '../data/DB'
 
 const Skills = () => {
 
@@ -25,6 +29,17 @@ const Skills = () => {
                     d massa tincidunt eleifend.
                 </p>
 
+                <SkillSection>
+                    {skills.map(skill => (<Skill title={skill.title} text={skill.text} />))}
+                </SkillSection>
+
+                <p>
+                    Vestibulum vel metus. Donec sagittis velit vel augue.
+                    Fusce in nisl vitae massa venenatis rhoncus. Praesent
+                    orci velit, lobortis eget, suscipit semper, congue eu,
+                    est. Quisque malesuada volutpat enim.
+                </p>
+
             </TextBox>
         </Container>
     )
@@ -35,7 +50,6 @@ export default Skills
 // Style
 const Container = styled.div`
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +67,7 @@ const TextBox = styled.div`
     background-color: white;
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
-    padding: 34px;
+    padding: 34px 58px;
     border-radius: 18px;
     line-height: 1.8;
 
@@ -66,4 +80,11 @@ const TextBox = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+`
+
+const SkillSection = styled.div`
+    margin: 34px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `
