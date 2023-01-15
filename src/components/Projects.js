@@ -4,6 +4,10 @@ import styled from "styled-components"
 // Components
 import Tag from "./Tag"
 import Footer from "./Footer"
+import Project from "./Project"
+
+// Database
+import { ProjectList } from "../data/DB"
 
 const Projects = () => {
 
@@ -12,7 +16,14 @@ const Projects = () => {
             <Tag title={'🚀 Projects'} />
             <h1>WHAT HAVE I DONE?</h1>
 
-            {/* <Project /> */}
+            {ProjectList.map(project => (
+                <Project
+                    title={project.title}
+                    text={project.text}
+                    image={project.image}
+                    tags={project.tags}
+                />
+            ))}
 
             <Footer />
         </Container>
@@ -24,7 +35,7 @@ export default Projects
 // Style
 const Container = styled.div`
     background-color: #426490;
-    height: 700px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

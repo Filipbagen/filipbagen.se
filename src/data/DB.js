@@ -1,4 +1,4 @@
-const buttonData = [
+const AboutMe = [
     {
         emoji: "👨🏽‍💻",
         title: "About Me",
@@ -47,7 +47,33 @@ const skills = [
         title: "Skill 6",
         text: "How to study effectively for exams, with the best evidence-based techniques"
     }
-
 ]
 
-export { buttonData, skills }
+const ProjectList = [
+    {
+        title: "Lego Search Engine",
+        text: "How to study effectively for exams, with the best evidence-based techniques",
+        image: "../img/leegle.png",
+        tags: ['VS Code', 'JavaScript', 'SQL', 'CSS'],
+        githubLink: '',
+        projectLink: ''
+    },
+    {
+        title: "Merit",
+        text: "How to study effectively for exams, with the best evidence-based techniques",
+        image: "../img/leegle.png",
+        tags: ['VS Code', 'JavaScript', 'SQL', 'CSS'],
+        githubLink: '',
+        projectLink: ''
+    },
+    {
+        title: "F1",
+        text: "How to study effectively for exams, with the best evidence-based techniques",
+        image: "../img/leegle.png",
+        tags: ['VS Code', 'JavaScript', 'SQL', 'CSS'],
+        githubLink: '',
+        projectLink: ''
+    }
+]
+
+export { AboutMe, skills, ProjectList }
