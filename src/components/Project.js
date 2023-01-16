@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-// import img from '../img/leegle.png'
+import gh from '../img/github.svg'
+import open from '../img/open.svg'
 
 // Components
 import ProjectTag from "./ProjectTag"
@@ -10,9 +11,7 @@ const Project = (props) => {
 
     return (
         <Container>
-            <Image>
-                {/* <h1>Test</h1> */}
-            </Image>
+            <Image src={props.image} />
 
             <Info>
                 <h2>{props.title}</h2>
@@ -24,9 +23,13 @@ const Project = (props) => {
                 <Tags>
                     {props.tags.map(tag => <ProjectTag tag={tag} />)}
                 </Tags>
+
+                <Links>
+                    <a href={props.githubLink}><img src={gh} alt="github" /></a>
+                    <a href={props.projectLink}><img src={open} alt="project" /></a>
+                </Links>
+
             </Info>
-
-
         </Container>
     )
 }
@@ -46,18 +49,11 @@ const Container = styled.div`
 
 const Info = styled.div`
     position: relative;
-    right: 38px;
-    margin: 12px;
-    width: 600px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-    background-color: green;
+    right: 58px;
 
     & > h2 {
         margin: 0;
+        text-align: right;
     }
 `
 
@@ -72,20 +68,33 @@ const Text = styled.p`
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
 `
 
-const Tags = styled.div`
+const Links = styled.div`
     display: flex;
-    /* justify-content: center; */
-    flex-direction: row;
-    /* align-items: center; */
+    justify-content: flex-end;
+    margin: 16px 0;
+
+    & > a {
+        margin: 0 0 0 14px;
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
 `
 
-const Image = styled.div`
-    background-color: red;
+const Tags = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+`
 
-    background-image: url("../img/leegle.png");
+const Image = styled.img`
+    /* background-image: url(${props => props.image});
+    background-color: red;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
     border-radius: 10px;
     height: 300px;

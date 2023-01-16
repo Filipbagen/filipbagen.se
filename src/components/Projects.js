@@ -16,12 +16,14 @@ const Projects = () => {
             <Tag title={'🚀 Projects'} />
             <h1>WHAT HAVE I DONE?</h1>
 
-            {ProjectList.map(project => (
+            {ProjectList.map((project, index) => (
                 <Project
                     title={project.title}
                     text={project.text}
                     image={project.image}
                     tags={project.tags}
+                    githubLink={project.githubLink}
+                    projectLink={project.projectLink}
                 />
             ))}
 
