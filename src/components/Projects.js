@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Tag from "./Tag"
 import Footer from "./Footer"
 import Project from "./Project"
+import OtherProjects from './OtherProjects'
 
 // Database
 import { ProjectList } from "../data/DB"
@@ -27,6 +28,9 @@ const Projects = () => {
                 />
             ))}
 
+            <h2>OTHER NOTEWORTHY PROJECTS</h2>
+            <OtherProjects />
+
             <Footer />
         </Container>
     )
@@ -47,6 +51,10 @@ const Container = styled.div`
     & > h1 {
         margin: 0;
         font-size: 56px;
+        color: white;
+    }
+
+    & > h2 {
         color: white;
     }
 `

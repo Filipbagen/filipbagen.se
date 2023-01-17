@@ -1,30 +1,26 @@
 import React from "react"
 import styled from "styled-components"
 
+// img
 import gh from '../img/github.svg'
 import open from '../img/open.svg'
 
 // Components
 import ProjectTag from "./ProjectTag"
 
-const Project = (props) => {
+const SmallProject = (props) => {
 
     return (
         <Container>
-            <Image src={props.image} />
+            <h1>{props.emoji}</h1>
+            <h2>{props.title.toUpperCase()}</h2>
+            <p>{props.text}</p>
 
             <Info>
-                <h2>{props.title}</h2>
-
-                <Text>
-                    {props.text}
-                </Text>
-
                 <Tags>
                     {props.tags.map(tag => <ProjectTag tag={tag} />)}
                 </Tags>
 
-                {/* only render if there are any links */}
                 <Links>
                     {
                         props.githubLink != '' ? (<a href={props.githubLink}><img src={gh} alt="github" /></a>) : (null)
@@ -39,48 +35,56 @@ const Project = (props) => {
     )
 }
 
-export default Project
+export default SmallProject
 
 // Style
 const Container = styled.div`
-    color: white;
-    
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
+    justify-content: space-around;
+    height: 230px;
+    width: 230px;
     margin: 32px;
-`
+    padding: 12px;
+    border-radius: 12px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
 
-const Info = styled.div`
-    position: relative;
-    right: 58px;
+    & > h1 {
+        margin: 0;
+        font-size: 52px;
+    }
 
     & > h2 {
         margin: 0;
-        text-align: right;
+        font-size: 24px;
+    }
+
+    & > p {
+        margin: 0;
+        font-size: 14px;
     }
 `
 
-const Text = styled.p`
-    color: black;
-    background-color: white;
-    padding: 22px;
-    border-radius: 10px;
-    width: 400px;
-
-    -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
-    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
+const Tags = styled.div`
+    color: white;
+    display: flex;
+    flex-direction: row;
 `
 
 const Links = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin: 16px 0;
+    margin: 0 8px 0 0;
 
     & > a {
         margin: 0 0 0 14px;
         transition: .2s;
+
+        & > img {
+            filter: invert(1);
+        }
 
         &:hover {
             transform: scale(1.07);
@@ -88,15 +92,8 @@ const Links = styled.div`
     }
 `
 
-const Tags = styled.div`
+const Info = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 `
-
-const Image = styled.img`
-    border-radius: 10px;
-    height: 300px;
-    width: 600px;
-`
-// background: ${props => `url(${props.background}) no-repeat top center`};

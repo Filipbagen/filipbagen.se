@@ -76,4 +76,31 @@ const ProjectList = [
     }
 ]
 
-export { AboutMe, skills, ProjectList }
+const OtherProjectsList = [
+    {
+        emoji: "🪐",
+        title: "Solar system",
+        text: "A semi-realistic solar system, created with three.js",
+        tags: ['ThreeJS'],
+        githubLink: 'https://github.com/Filipbagen/threejs-solar-system',
+        projectLink: 'https://filipbagen.github.io/threejs-solar-system/'
+    },
+    {
+        emoji: "🗺️",
+        title: "Country finder",
+        text: "A geography game,which challenges the user to find a specific country.",
+        tags: ['React'],
+        githubLink: 'https://github.com/Filipbagen/country-finder',
+        projectLink: 'https://filipbagen.github.io/country-finder/'
+    },
+    {
+        emoji: "🥑",
+        title: "Guac-a-mole",
+        text: "A Whack-a-mole game made as an inside joke",
+        tags: ['JavaScript'],
+        githubLink: 'https://github.com/Filipbagen/guac-a-mole',
+        projectLink: 'https://filipbagen.github.io/Guac-a-mole/'
+    }
+]
+
+export { AboutMe, skills, ProjectList, OtherProjectsList }

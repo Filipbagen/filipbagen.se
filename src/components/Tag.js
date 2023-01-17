@@ -13,6 +13,7 @@ export default Tag
 
 // Styles
 const Container = styled.div`
+    margin: 12px 0;
     padding: 2px 20px;
     display: flex;
     justify-content: center;
