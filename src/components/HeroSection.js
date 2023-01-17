@@ -36,14 +36,27 @@ const Head = styled.header`
     height: 800px;
     width: 100vw;
 
+    position: relative;
+    overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image: url(${hero});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        width: 120vw;
+        height: 250px;
+        border-radius: 100%;
+        // Horizontal, vertical, blur radius, spread
+        box-shadow: 0px -300px 0px 100vh #3b6aa8;
+    }
+
+    &::after {
+        
+    }
 `
 
 const Intro = styled.div`
