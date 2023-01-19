@@ -40,8 +40,8 @@ const Container = styled.div`
     flex-direction: row;
     width: 100vw;
 
-    position: relative;
-    bottom: 140px;
+    /* position: relative;
+    bottom: 140px; */
 `
 
 const TextBox = styled.div`

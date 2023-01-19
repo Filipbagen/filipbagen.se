@@ -45,7 +45,7 @@ const Head = styled.header`
     &::before {
         content: '';
         position: absolute;
-        bottom: -100px;
+        bottom: -50px;
         width: 130vw;
         height: 180px;
         border-radius: 100%;

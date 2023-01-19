@@ -55,8 +55,8 @@ const Container = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    position: relative;
-    bottom: 340px;
+    /* position: relative;
+    bottom: 340px; */
     z-index: 1;
 `
 
