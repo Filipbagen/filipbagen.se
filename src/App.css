@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: 'SF Pro Text', sans-serif;
   line-height: 1.4;
+  /* background: linear-gradient(#124678, #90C5F7); */
 }
 
 .App {

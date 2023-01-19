@@ -39,6 +39,9 @@ const Container = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100vw;
+
+    position: relative;
+    bottom: 140px;
 `
 
 const TextBox = styled.div`

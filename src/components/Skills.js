@@ -30,7 +30,7 @@ const Skills = () => {
                 </p>
 
                 <SkillSection>
-                    {skills.map(skill => (<Skill title={skill.title} text={skill.text} />))}
+                    {skills.map(skill => (<Skill title={skill.title} text={skill.text} key={skill.title} />))}
                 </SkillSection>
 
                 <p>
@@ -55,6 +55,9 @@ const Container = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100vw;
+    position: relative;
+    bottom: 340px;
+    z-index: 1;
 `
 
 const TextBox = styled.div`

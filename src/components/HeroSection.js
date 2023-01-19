@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import profilePic from "../img/profile.jpg"
 import border from "../img/border.svg"
-import hero from '../img/hero.svg'
 import handwritten from '../img/handwritten.svg'
 
 // Components
@@ -47,8 +46,8 @@ const Head = styled.header`
         content: '';
         position: absolute;
         bottom: -100px;
-        width: 120vw;
-        height: 250px;
+        width: 130vw;
+        height: 180px;
         border-radius: 100%;
         // Horizontal, vertical, blur radius, spread
         box-shadow: 0px -300px 0px 100vh #3b6aa8;

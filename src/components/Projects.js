@@ -25,6 +25,7 @@ const Projects = () => {
                     tags={project.tags}
                     githubLink={project.githubLink}
                     projectLink={project.projectLink}
+                    key={project.title}
                 />
             ))}
 
@@ -40,6 +41,9 @@ export default Projects
 
 // Style
 const Container = styled.div`
+    height: 2000px;
+    position: relative;
+    bottom: 400px;
     background-color: #426490;
     padding-top: 50px;
     display: flex;

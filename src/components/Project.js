@@ -21,16 +21,16 @@ const Project = (props) => {
                 </Text>
 
                 <Tags>
-                    {props.tags.map(tag => <ProjectTag tag={tag} />)}
+                    {props.tags.map(tag => <ProjectTag tag={tag} key={props.githubLink} />)}
                 </Tags>
 
                 {/* only render if there are any links */}
                 <Links>
                     {
-                        props.githubLink != '' ? (<a href={props.githubLink}><img src={gh} alt="github" /></a>) : (null)
+                        props.githubLink !== '' ? (<a href={props.githubLink}><img src={gh} alt="github" /></a>) : (null)
                     }
                     {
-                        props.projectLink != '' ? (<a href={props.projectLink}><img src={open} alt="project" /></a>) : (null)
+                        props.projectLink !== '' ? (<a href={props.projectLink}><img src={open} alt="project" /></a>) : (null)
                     }
                 </Links>
 

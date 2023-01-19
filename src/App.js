@@ -1,6 +1,6 @@
 // Import
-import './App.css';
-import React from 'react';
+import './App.css'
+import React from 'react'
 
 // Components
 import HeroSection from './components/HeroSection'

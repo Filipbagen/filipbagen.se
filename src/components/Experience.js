@@ -25,12 +25,15 @@ export default Experience
 //Style
 const Container = styled.div`
     background: -webkit-linear-gradient(#75ACF3, #426490);
-    height: 700px;
+    height: 1000px;
+    width: 100vw;
+    position: relative;
+    bottom: 260px;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
 
     & > h1 {
         margin: 0;
