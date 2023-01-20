@@ -108,7 +108,7 @@ const Experiences = [
         title: "Project Manager @ Media Technology Day",
         date: "April - December 2022",
         tags: ['Time managment', 'Adaptability', 'Problem solving'],
-        text: 'Sed vitae arcu. Aliquam erat volutpat. Praesent odio nisl, suscipit at, rhoncus sit amet, porttitor sit amet, leo. Aenean hendrerit est. Etiam ac augue. Morbi tincidunt neque ut lacus. Duis vulputate cursus orci. Mauris justo lorem, scelerisque sit amet, placerat sed, '
+        text: 'Sed vitae arcu. Aliquam erat volutpat. Praesent odio nisl, suscipit at, rhoncus sit amet, porttitor sit amet, leo. Aenean hendrerit est. Etiam ac augue. Morbi tincidunt neque ut lacus. Duis vulputate cursus orci. Mauris justo lorem, scelerisque sit amet, placerat sed.'
     },
     {
         title: "Programming Tutor @ Linköping University",

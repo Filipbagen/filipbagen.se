@@ -39,9 +39,7 @@ const Container = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100vw;
-
-    /* position: relative;
-    bottom: 140px; */
+    /* height: 100vh; */
 `
 
 const TextBox = styled.div`
@@ -56,15 +54,13 @@ const TextBox = styled.div`
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
     padding: 34px;
     border-radius: 18px;
-    line-height: 1.8;
 
-
-& > h1 {
-    margin: 0;
-    font-size: 56px;
-    background: -webkit-linear-gradient(left, #75ACF3, #548FDD);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    & > h1 {
+        margin: 0;
+        font-size: 56px;
+        background: -webkit-linear-gradient(left, #75ACF3, #548FDD);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 `

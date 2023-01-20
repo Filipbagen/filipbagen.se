@@ -12,6 +12,7 @@ const Skills = () => {
 
     return (
         <Container>
+
             <TextBox>
                 <Tag title={'🎯 Skills'} />
                 <h1>WHAT CAN I DO?</h1>
@@ -41,7 +42,9 @@ const Skills = () => {
                 </p>
 
             </TextBox>
+
         </Container>
+
     )
 }
 
@@ -49,11 +52,9 @@ export default Skills
 
 // Style
 const Container = styled.div`
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     width: 100vw;
     /* position: relative;
     bottom: 340px; */

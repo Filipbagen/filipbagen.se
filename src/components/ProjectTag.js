@@ -16,7 +16,7 @@ export default ProjectTag
 const Tag = styled.p`
     font-size: 14px;
     padding: 6px 14px;
-    margin: 0 0 0 8px;
+    margin: 0 0 0 0px;
     background-color: #4d7ac8;
     border-radius: 32px;
 `
