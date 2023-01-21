@@ -8,10 +8,13 @@ import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
     <div>
+      <NavBar />
+
       <HeroSection />
       <AboutMe />
       <Experience />

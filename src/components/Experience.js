@@ -28,81 +28,85 @@ const Experience = () => {
     const array = Experiences[num]
 
     return (
-        // <Content>
-        //     <Tag title={'🗺️ Experience'} />
-        //     <h1>Where I have Worked?</h1>
+        <Content id="experience">
 
-        <Container>
+            <Container>
+                <Tag title={'🗺️ Experience'} />
+                <h1>Where I have Worked</h1>
 
-            <Test>
-                <Line />
 
-                <Buttons>
-                    <p onClick={MTD}
-                        style={{
-                            fontWeight: num == 0 ? 'bold' : 'normal',
-                            opacity: num == 0 ? 1 : 0.5
-                        }}>MEDIA TECHNOLOGY DAY</p>
+                <Test2>
 
-                    <p onClick={LiU}
-                        style={{
-                            fontWeight: num == 1 ? 'bold' : 'normal',
-                            opacity: num == 1 ? 1 : 0.5
-                        }}>LINKÖPING UNIVERSITY</p>
+                    <Test>
+                        <Line />
 
-                    <p onClick={UU}
-                        style={{
-                            fontWeight: num == 2 ? 'bold' : 'normal',
-                            opacity: num == 2 ? 1 : 0.5
-                        }}>UNGA UTVECKLARE</p>
-                </Buttons>
-            </Test>
+                        <Buttons>
+                            <p onClick={MTD}
+                                style={{
+                                    fontWeight: num === 0 ? 'bold' : 'normal',
+                                    opacity: num === 0 ? 1 : 0.5
+                                }}>MEDIA TECHNOLOGY DAY</p>
 
-            <ProjectContent>
-                <h2>{array.title}</h2>
-                <h4>{array.date}</h4>
+                            <p onClick={LiU}
+                                style={{
+                                    fontWeight: num === 1 ? 'bold' : 'normal',
+                                    opacity: num === 1 ? 1 : 0.5
+                                }}>LINKÖPING UNIVERSITY</p>
 
-                <Tags>
-                    {array.tags.map(tag => (
-                        <ProjectTag tag={tag} />
-                    )
-                    )}
-                </Tags>
+                            <p onClick={UU}
+                                style={{
+                                    fontWeight: num === 2 ? 'bold' : 'normal',
+                                    opacity: num === 2 ? 1 : 0.5
+                                }}>UNGA UTVECKLARE</p>
+                        </Buttons>
+                    </Test>
 
-                <p>{array.text}</p>
-            </ProjectContent>
+                    <ProjectContent>
+                        <h2>{array.title}</h2>
+                        <h4>{array.date}</h4>
 
-        </Container>
-        // </Content>
+                        <Tags>
+                            {array.tags.map(tag => (
+                                <ProjectTag tag={tag} />
+                            )
+                            )}
+                        </Tags>
+
+                        <p>{array.text}</p>
+                    </ProjectContent>
+
+                </Test2>
+
+            </Container>
+
+        </Content>
     )
 }
 
 export default Experience
 
 //Style
-const Container = styled.div`
+const Content = styled.div`
     width: 100vw;
+    height: 1200px;
+
+    background: -webkit-linear-gradient(#90C5F7, #1E69B0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: -150px;
+`
+
+const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 
-    background: -webkit-linear-gradient(#75ACF3, #426490);
-    /* height: 1000px; */
-    /* position: relative; */
-    /* bottom: 260px; */
-    /* z-index: -1; */
+    margin-top: -320px;
 
-
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw; */
-
-
-    height: 700px;
     color: white;
 
     & > h1 {
@@ -110,6 +114,20 @@ const Container = styled.div`
         font-size: 56px;
         color: white;
     }
+`
+
+const Test = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+`
+
+const Test2 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 `
 
 const Tags = styled.div`
@@ -127,12 +145,8 @@ const Buttons = styled.div`
         cursor: pointer;
         margin: 4px;
         transition: .2s;
+        color: white;
     }
-`
-
-const Content = styled.div`
-    /* display: flex;
-    flex-direction: column; */
 `
 
 const ProjectContent = styled.div`
@@ -148,6 +162,10 @@ const ProjectContent = styled.div`
         margin: 8px 0;
         font-weight: 500;
     }
+
+    & > p {
+        color: white;
+    }
 `
 
 const Line = styled.div`
@@ -157,11 +175,4 @@ const Line = styled.div`
     border-radius: 99px;
     margin: 0 20px;
 
-`
-
-const Test = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
 `

@@ -7,13 +7,17 @@ import handwritten from '../img/handwritten.svg'
 // Components
 import NavBar from "./NavBar"
 
+// img
+import hero from "../img/hero.svg"
+
 const HeroSection = () => {
 
     return (
         <div>
-            {/* <NavBar /> */}
+
 
             <Head>
+                {/* <NavBar /> */}
                 <Intro>
 
                     <Pic>
@@ -36,23 +40,13 @@ const Head = styled.header`
     height: 90vh;
     width: 100vw;
 
-    position: relative;
-    overflow: hidden;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: -70px;
-        width: 110vw;
-        height: 200px;
-        border-radius: 100%;
-        // Horizontal, vertical, blur radius, spread
-        box-shadow: 0px -300px 0px 100vh #3b6aa8;
-    }
+    background-image: url(${hero});
+    background-position: 50% 100%;
+    background-size: cover;
 `
 
 const Intro = styled.div`

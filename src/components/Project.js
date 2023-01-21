@@ -11,7 +11,9 @@ const Project = (props) => {
 
     return (
         <Container>
-            <Image src={props.image} />
+            <a href={props.projectLink}>
+                <Image src={props.image} />
+            </a>
 
             <Info>
                 <h2>{props.title}</h2>
@@ -53,8 +55,7 @@ const Container = styled.div`
 `
 
 const Info = styled.div`
-    position: relative;
-    right: 58px;
+    margin-left: -52px;
 
     & > h2 {
         margin: 0;
@@ -63,7 +64,6 @@ const Info = styled.div`
 `
 
 const Text = styled.p`
-    color: black;
     background-color: white;
     padding: 22px;
     border-radius: 10px;
@@ -96,7 +96,13 @@ const Tags = styled.div`
 
 const Image = styled.img`
     border-radius: 10px;
-    height: 300px;
-    width: 600px;
+    height: 320px;
+    width: 570px;
+
+    object-fit: cover;
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
-// background: ${props => `url(${props.background}) no-repeat top center`};

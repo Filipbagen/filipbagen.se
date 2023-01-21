@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Tag = (props) => {
     return (
         <Container>
-            <h3>{props.title}</h3>
+            <h4>{props.title.toUpperCase()}</h4>
         </Container>
     )
 }
@@ -21,9 +21,10 @@ const Container = styled.div`
     background-color: #E3F1FF;
     border-radius: 50px;
 
-    & > h3 {
+    & > h4 {
         margin: 0;
         color: #3D7CCE;
+        letter-spacing: 1px;
     }
 
 `

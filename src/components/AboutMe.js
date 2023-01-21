@@ -7,22 +7,26 @@ import Tag from "./Tag"
 const AboutMe = () => {
 
     return (
-        <Container>
+        <Container id="about">
             <TextBox>
                 <Tag title={'👀 About Me'} />
                 <h1>WHO AM I?</h1>
 
                 <p>
-                    Vestibulum vel metus. Donec sagittis velit vel augue.
-                    Fusce in nisl vitae massa venenatis rhoncus. Praesent
-                    orci velit, lobortis eget, suscipit semper, congue eu,
-                    est. Quisque malesuada volutpat enim. Vestibulum leo
-                    sem, molestie a, mattis bibendum, feugiat facilisis, nisl.
-                    Nam scelerisque odio. Suspendisse fermentum faucibus felis.
-                    Praesent pharetra. In consequat felis in tellus. In mi enim,
-                    rhoncus ullamcorper, sagittis at, placerat eget, mauris.
-                    Suspendisse auctor erat at ipsum. Aliquam vitae tortor i
-                    d massa tincidunt eleifend.
+                    Hey there! My name is Filip and I'm on a mission to master the art of <b>Computer Science
+                        as a Master's student.</b> I've always been enamored with the endless possibilities that
+                    Artificial Intelligence offers, and I've found that my <b> passion for web design and
+                        project management </b> perfectly complements my love for technology. I'm a firm believer
+                    that the ability to be curius and to learn new skills is the key to success, and I've
+                    honed my skills in Python and Java, as well as machine learning and natural language processing.
+                </p>
+                <p>
+                    When I'm not studying, you can find me <b> building on my own projects </b> using my skills in design and
+                    code development. I find it incredibly fascinating how technology and design can work together to create
+                    something truly beautiful and functional. <b> My curiosity and experience as given me valuable experience </b>
+                    in developing and deploying production-level code, and I am always
+                    eager to learn more and take on new challenges. So, whether it's coding, design,
+                    project management or exploring new technologies, I'm all in!
                 </p>
 
             </TextBox>
@@ -39,7 +43,7 @@ const Container = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    /* height: 100vh; */
+    margin-top: -200px;
 `
 
 const TextBox = styled.div`

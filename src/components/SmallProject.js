@@ -13,7 +13,7 @@ const SmallProject = (props) => {
     return (
         <Container>
             <h1>{props.emoji}</h1>
-            <h2>{props.title.toUpperCase()}</h2>
+            <h2>{props.title}</h2>
             <p>{props.text}</p>
 
             <Info>

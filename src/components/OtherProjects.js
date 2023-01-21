@@ -27,7 +27,6 @@ export default OtherProjects
 
 // Style
 const Container = styled.div`
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

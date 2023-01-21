@@ -11,7 +11,7 @@ import { skills } from '../data/DB'
 const Skills = () => {
 
     return (
-        <Container>
+        <Container id="skills">
 
             <TextBox>
                 <Tag title={'🎯 Skills'} />
@@ -56,9 +56,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    /* position: relative;
-    bottom: 340px; */
-    z-index: 1;
+    margin-top: -460px;
 `
 
 const TextBox = styled.div`
@@ -73,7 +71,6 @@ const TextBox = styled.div`
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
     padding: 34px 58px;
     border-radius: 18px;
-    line-height: 1.8;
 
 
 & > h1 {
