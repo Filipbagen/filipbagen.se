@@ -15,8 +15,16 @@ export default ProjectTag
 // Styling
 const Tag = styled.p`
     font-size: 14px;
-    padding: 6px 14px;
-    margin: 0 0 0 0px;
+    padding: 6px 18px;
+    margin: 0 2px;
     background-color: #4d7ac8;
     border-radius: 32px;
+    color: white;
+
+    @media (max-width: 740px) {
+        padding: 3px 8px;
+        font-weight: 400;
+        margin: 2px;
+        font-size: 12px;
+    }
 `

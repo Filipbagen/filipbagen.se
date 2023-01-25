@@ -19,33 +19,33 @@ const AboutMe = [
 const skills = [
     {
         emoji: "👨🏽‍💻",
-        title: "Skill 1",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        title: "Programming",
+        text: "I am a self-taught coder with " + (new Date().getFullYear() - 2016) + " years of experience. I enjoy the problem-solving aspect of programming and the satisfaction of seeing my code come to life."
     },
     {
-        emoji: "🎯",
-        title: "Skill 2",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        emoji: "🎨",
+        title: "UX-Design",
+        text: "I have a strong sense of graphical design and have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator."
     },
     {
-        emoji: "🚀",
-        title: "Skill 3",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        emoji: "🎥",
+        title: "Photogoraphy",
+        text: "I have been honing my photography and videography skills since I got my first camera, and have experience in both capturing and editing visual content using Final Cut Pro and Premiere Pro."
     },
     {
-        emoji: "👨🏽‍💻",
-        title: "Skill 4",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        emoji: "⚙️",
+        title: "Project Managment",
+        text: "I have experience in leading and organising teams to achieve specific goals and objectives. I enjoy the challenge of coordinating and strategising to ensure a project runs smoothly and efficiently."
     },
     {
-        emoji: "🎯",
-        title: "Skill 5",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        emoji: "🔭",
+        title: "Creativity",
+        text: " consider myself to be a curious and creative person and I believe that my innate curiosity is the key to discovering new things, solving problems and coming up with innovative solutions."
     },
     {
-        emoji: "👨🏽‍💻",
-        title: "Skill 6",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
+        emoji: "🍕",
+        title: "Cooking",
+        text: "Not a job I’m looking for and it may not be relevant for my next employer, but I’m a self-appointed master in the kitchen. I just want to brag about it."
     }
 ]
 

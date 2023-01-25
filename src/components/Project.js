@@ -52,6 +52,10 @@ const Container = styled.div`
     align-items: center;
 
     margin: 32px;
+
+    @media (max-width: 670px) {
+        margin: 0 22px;
+    }
 `
 
 const Info = styled.div`
@@ -60,6 +64,14 @@ const Info = styled.div`
     & > h2 {
         margin: 0;
         text-align: right;
+
+        @media (max-width: 1030px) {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 670px) {
+        margin-left: 0;
     }
 `
 
@@ -67,10 +79,10 @@ const Text = styled.p`
     background-color: white;
     padding: 22px;
     border-radius: 10px;
-    width: 400px;
+    max-width: 400px;
 
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
-    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);    
 `
 
 const Links = styled.div`
@@ -92,6 +104,10 @@ const Tags = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
+    @media (max-width: 670px) {
+        flex-wrap: wrap;
+    }
 `
 
 const Image = styled.img`
@@ -104,5 +120,9 @@ const Image = styled.img`
 
     &:hover {
         cursor: pointer;
+    }
+
+    @media (max-width: 1030px) {
+        display: none;
     }
 `

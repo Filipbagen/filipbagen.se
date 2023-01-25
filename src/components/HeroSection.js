@@ -4,32 +4,23 @@ import profilePic from "../img/profile.jpg"
 import border from "../img/border.svg"
 import handwritten from '../img/handwritten.svg'
 
-// Components
-import NavBar from "./NavBar"
-
 // img
 import hero from "../img/hero.svg"
 
 const HeroSection = () => {
 
     return (
-        <div>
+        <Head>
+            <Intro>
 
+                <Pic>
+                    <Border />
+                    <Profile />
+                </Pic>
 
-            <Head>
-                {/* <NavBar /> */}
-                <Intro>
-
-                    <Pic>
-                        <Border />
-                        <Profile />
-                    </Pic>
-
-                    <Handwritten src={handwritten} alt="" />
-                </Intro>
-            </Head>
-        </div>
-
+                <Handwritten src={handwritten} alt="" />
+            </Intro>
+        </Head>
     )
 }
 
@@ -63,6 +54,10 @@ const Intro = styled.div`
         font-size: 54px;
         margin: 0;
     }
+
+    @media (max-width: 670px) {
+        flex-direction: column;
+    }
 `
 
 const Pic = styled.div`
@@ -95,4 +90,8 @@ const Profile = styled.div`
 const Handwritten = styled.img`
     height: 100px;
     margin-left: 60px;
+
+    @media (max-width: 670px) {
+        margin: 0;
+    }
 `

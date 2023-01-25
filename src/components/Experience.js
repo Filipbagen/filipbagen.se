@@ -32,7 +32,7 @@ const Experience = () => {
 
             <Container>
                 <Tag title={'🗺️ Experience'} />
-                <h1>Where I have Worked</h1>
+                <h1>Where I Have Worked</h1>
 
 
                 <Test2>
@@ -97,6 +97,11 @@ const Content = styled.div`
     justify-content: center;
 
     margin-top: -150px;
+
+    @media (max-width: 670px) {
+        margin-top: -14px;
+        height: 700px;
+    }
 `
 
 const Container = styled.div`
@@ -113,6 +118,15 @@ const Container = styled.div`
         margin: 0;
         font-size: 56px;
         color: white;
+
+        @media (max-width: 670px) {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        margin-top: 22px;
     }
 `
 
@@ -128,12 +142,20 @@ const Test2 = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @media (max-width: 740px) {
+        flex-direction: column;
+    }
 `
 
 const Tags = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+
+    @media (max-width: 740px) {
+        flex-wrap: wrap;
+    }
 `
 
 const Buttons = styled.div`
@@ -143,9 +165,28 @@ const Buttons = styled.div`
 
     & > p {
         cursor: pointer;
-        margin: 4px;
+        padding: 4px;
+        margin: 0;
         transition: .2s;
         color: white;
+        transition: .2s;
+
+        &:hover {
+            background-color: gray;
+        }
+
+        @media (max-width: 740px) {
+            padding: 0 12px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 740px) {
+        flex-direction: row;
+        overflow: scroll;
+        white-space: nowrap;
+        width: 100vw;
+        overflow: scroll;
     }
 `
 
@@ -155,16 +196,25 @@ const ProjectContent = styled.div`
 
     & > h2 {
         margin: 0;
-        font-size: 26px;
+        font-size: 18px;
     }
 
     & > h4 {
-        margin: 8px 0;
-        font-weight: 500;
+        margin: 0 0 14px 0;
+        font-weight: 400;
+        font-size: 14px;
     }
 
     & > p {
         color: white;
+
+        @media (max-width: 740px) {
+            margin: 0 10px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        margin: 28px;
     }
 `
 
@@ -174,5 +224,9 @@ const Line = styled.div`
     background-color: white;
     border-radius: 99px;
     margin: 0 20px;
+
+    @media (max-width: 740px) {
+        display: none;
+    }
 
 `

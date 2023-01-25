@@ -69,6 +69,11 @@ const ProjectsContainer = styled.div`
         margin: 0;
         font-size: 56px;
         color: white;
+
+        @media (max-width: 670px) {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
     }
 `
 

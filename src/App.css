@@ -45,3 +45,10 @@ img {
   -o-user-drag: none;
   user-drag: none;
 }
+
+.gradientText {
+  background: -webkit-linear-gradient(left, #75ACF3, #326bb6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

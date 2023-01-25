@@ -15,23 +15,15 @@ const Skills = () => {
 
             <TextBox>
                 <Tag title={'🎯 Skills'} />
-                <h1>WHAT CAN I DO?</h1>
+                <h1 className="gradientText">What I Can Do</h1>
 
                 <p>
-                    Vestibulum vel metus. Donec sagittis velit vel augue.
-                    Fusce in nisl vitae massa venenatis rhoncus. Praesent
-                    orci velit, lobortis eget, suscipit semper, congue eu,
-                    est. Quisque malesuada volutpat enim. Vestibulum leo
-                    sem, molestie a, mattis bibendum, feugiat facilisis, nisl.
-                    Nam scelerisque odio. Suspendisse fermentum faucibus felis.
-                    Praesent pharetra. In consequat felis in tellus. In mi enim,
-                    rhoncus ullamcorper, sagittis at, placerat eget, mauris.
-                    Suspendisse auctor erat at ipsum. Aliquam vitae tortor i
-                    d massa tincidunt eleifend.
+                    I have a few set of skills which I’m especially proud about.
+                    Some skills has the origin from the school, and some derive from my personal projects.
                 </p>
 
                 <SkillSection>
-                    {skills.map(skill => (<Skill title={skill.title} text={skill.text} key={skill.title} />))}
+                    {skills.map(skill => (<Skill emoji={skill.emoji} title={skill.title} text={skill.text} key={skill.title} />))}
                 </SkillSection>
 
                 <p>
@@ -57,6 +49,11 @@ const Container = styled.div`
     align-items: center;
     width: 100vw;
     margin-top: -460px;
+
+    @media (max-width: 670px) {
+        margin-top: -14px;
+        height: 100%;
+    }
 `
 
 const TextBox = styled.div`
@@ -72,15 +69,14 @@ const TextBox = styled.div`
     padding: 34px 58px;
     border-radius: 18px;
 
+    & > h1 {
+        margin: 0;
+        font-size: 56px;
 
-& > h1 {
-    margin: 0;
-    font-size: 56px;
-    background: -webkit-linear-gradient(left, #75ACF3, #548FDD);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+        @media (max-width: 670px) {
+            font-size: 36px;
+        }
+    }
 `
 
 const SkillSection = styled.div`
@@ -88,4 +84,8 @@ const SkillSection = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 1030px) {
+        /* width: 800px; */
+    }
 `

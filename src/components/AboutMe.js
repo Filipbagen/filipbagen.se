@@ -10,7 +10,7 @@ const AboutMe = () => {
         <Container id="about">
             <TextBox>
                 <Tag title={'👀 About Me'} />
-                <h1>WHO AM I?</h1>
+                <h1 className="gradientText">Who Am I?</h1>
 
                 <p>
                     Hey there! My name is Filip and I'm on a mission to master the art of <b>Computer Science
@@ -62,9 +62,5 @@ const TextBox = styled.div`
     & > h1 {
         margin: 0;
         font-size: 56px;
-        background: -webkit-linear-gradient(left, #75ACF3, #548FDD);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 `
