@@ -44,20 +44,20 @@ const Experience = () => {
                             <p onClick={MTD}
                                 style={{
                                     fontWeight: num === 0 ? 'bold' : 'normal',
-                                    opacity: num === 0 ? 1 : 0.5
-                                }}>MEDIA TECHNOLOGY DAY</p>
+                                    color: num === 0 ? 'white' : '#a0bcdf'
+                                }}>Media Technology Day</p>
 
                             <p onClick={LiU}
                                 style={{
                                     fontWeight: num === 1 ? 'bold' : 'normal',
-                                    opacity: num === 1 ? 1 : 0.5
-                                }}>LINKÖPING UNIVERSITY</p>
+                                    color: num === 1 ? 'white' : '#a0bcdf'
+                                }}>Linköping University</p>
 
                             <p onClick={UU}
                                 style={{
                                     fontWeight: num === 2 ? 'bold' : 'normal',
-                                    opacity: num === 2 ? 1 : 0.5
-                                }}>UNGA UTVECKLARE</p>
+                                    color: num === 2 ? 'white' : '#a0bcdf'
+                                }}>Unga Utvecklare</p>
                         </Buttons>
                     </Test>
 
@@ -90,7 +90,7 @@ const Content = styled.div`
     width: 100vw;
     height: 1200px;
 
-    background: -webkit-linear-gradient(#90C5F7, #1E69B0);
+    background: -webkit-linear-gradient(#5A9CDA, #4684BF);
 
     display: flex;
     flex-direction: column;
@@ -99,8 +99,8 @@ const Content = styled.div`
     margin-top: -150px;
 
     @media (max-width: 670px) {
-        margin-top: -14px;
-        height: 700px;
+        margin-top: -190px;
+        height: 930px;
     }
 `
 
@@ -121,7 +121,7 @@ const Container = styled.div`
 
         @media (max-width: 670px) {
             font-size: 26px;
-            margin-bottom: 30px;
+            margin-bottom: 38px;
         }
     }
 
@@ -135,6 +135,10 @@ const Test = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @media (max-width: 740px) {
+        flex-direction: column-reverse;
+    }
 `
 
 const Test2 = styled.div`
@@ -152,9 +156,14 @@ const Tags = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    overflow: scroll;
 
     @media (max-width: 740px) {
-        flex-wrap: wrap;
+        max-width: 300px;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 `
 
@@ -163,20 +172,26 @@ const Buttons = styled.div`
     flex-direction: column;
     position: relative;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     & > p {
         cursor: pointer;
-        padding: 4px;
         margin: 0;
         transition: .2s;
         color: white;
         transition: .2s;
+        font-size: 12px;
+        border-radius: 6px;
+        width: 200px;
 
         &:hover {
-            background-color: gray;
+            background-color: #4d7ac8;
         }
 
         @media (max-width: 740px) {
-            padding: 0 12px;
+            padding: 8px 8px;
             font-size: 14px;
         }
     }
@@ -185,14 +200,15 @@ const Buttons = styled.div`
         flex-direction: row;
         overflow: scroll;
         white-space: nowrap;
-        width: 100vw;
+        width: 90vw;
         overflow: scroll;
     }
 `
 
 const ProjectContent = styled.div`
     max-width: 700px;
-    margin-left: 48px;
+    margin: 0 32px;
+    height: 250px;
 
     & > h2 {
         margin: 0;
@@ -207,14 +223,11 @@ const ProjectContent = styled.div`
 
     & > p {
         color: white;
-
-        @media (max-width: 740px) {
-            margin: 0 10px;
-        }
+        max-width: 550px;
     }
 
     @media (max-width: 670px) {
-        margin: 28px;
+        margin-top: 28px;
     }
 `
 
@@ -226,7 +239,12 @@ const Line = styled.div`
     margin: 0 20px;
 
     @media (max-width: 740px) {
-        display: none;
+        width: 100%;
+        height: 2px;
+        margin-top: 12px;
+        opacity: .4;
     }
+    
+    
 
 `

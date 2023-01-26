@@ -44,6 +44,10 @@ const Container = styled.div`
     flex-direction: row;
     width: 100vw;
     margin-top: -200px;
+
+    @media (max-width: 740px) {
+        margin-top: -120px;
+    }
 `
 
 const TextBox = styled.div`
@@ -62,5 +66,9 @@ const TextBox = styled.div`
     & > h1 {
         margin: 0;
         font-size: 56px;
+
+        @media (max-width: 670px) {
+            font-size: 26px;
+        }
     }
 `

@@ -47,7 +47,7 @@ export default Projects
 
 // Style
 const Container = styled.div`
-    background-color: #426490;
+    background: -webkit-linear-gradient(#4684BF, #164C7F);
     padding-top: 50px;
     width: 100vw;
 

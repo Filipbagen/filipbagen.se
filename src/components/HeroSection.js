@@ -18,7 +18,11 @@ const HeroSection = () => {
                     <Profile />
                 </Pic>
 
-                <Handwritten src={handwritten} alt="" />
+                <Handwritten>
+                    <img src={handwritten} alt="" />
+                    <p>I'm currently studying MSc in Media Technology and Engineering</p>
+                </Handwritten>
+
             </Intro>
         </Head>
     )
@@ -87,11 +91,26 @@ const Profile = styled.div`
     width: 210px;
 `
 
-const Handwritten = styled.img`
-    height: 100px;
+const Handwritten = styled.div`
     margin-left: 60px;
+    width: 340px;
 
     @media (max-width: 670px) {
-        margin: 0;
+            margin: 0;
     }
+
+    & > p {
+        margin: 0;
+        color: #FAF9F6;
+        line-height: 1.5;
+    }
+
+    & > img {
+        height: 100px;
+
+        @media (max-width: 670px) {
+            margin: 0;
+        }
+    }
+    
 `
