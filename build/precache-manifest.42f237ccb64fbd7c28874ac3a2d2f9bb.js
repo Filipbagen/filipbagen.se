@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "84eb8ddf9f9b190a74e1",
-    "url": "/filipbagen/static/css/main.1a04a2e6.chunk.css"
+    "revision": "47a1c0cbf0ecead226c1",
+    "url": "/filipbagen/static/css/main.63c8098e.chunk.css"
   },
   {
-    "revision": "84eb8ddf9f9b190a74e1",
-    "url": "/filipbagen/static/js/main.84eb8ddf.chunk.js"
+    "revision": "47a1c0cbf0ecead226c1",
+    "url": "/filipbagen/static/js/main.47a1c0cb.chunk.js"
   },
   {
-    "revision": "bc20d6d6d939309784cb",
-    "url": "/filipbagen/static/js/1.bc20d6d6.chunk.js"
+    "revision": "f12f5854ce980c3a420c",
+    "url": "/filipbagen/static/js/1.f12f5854.chunk.js"
   },
   {
-    "revision": "a665f3bc3fa796ce5b5c",
-    "url": "/filipbagen/static/js/2.a665f3bc.chunk.js"
+    "revision": "7eb27801643dfbbd4b85",
+    "url": "/filipbagen/static/js/2.7eb27801.chunk.js"
   },
   {
-    "revision": "a2b3b056ca05246fec87",
-    "url": "/filipbagen/static/js/runtime~main.a2b3b056.js"
+    "revision": "97d3915cf22218ec3d1c",
+    "url": "/filipbagen/static/js/runtime~main.97d3915c.js"
   },
   {
     "revision": "ba0656495558f5839b5b99260c72b833",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/filipbagen/static/media/SF-Pro-Text-Regular.d7ea7f16.otf"
   },
   {
-    "revision": "4424b220a916bea717683445ecdeba61",
+    "revision": "d6a7e1bdfd7973279b24071d511548a4",
     "url": "/filipbagen/index.html"
   }
 ];
