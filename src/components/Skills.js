@@ -18,8 +18,7 @@ const Skills = () => {
                 <h1 className="gradientText">What I Can Do</h1>
 
                 <p>
-                    I have a few set of skills which I’m especially proud about.
-                    Some skills has the origin from the school, and some derive from my personal projects.
+                    Here are some skills that I have learnt and developed through out the years:
                 </p>
 
                 <SkillSection>
