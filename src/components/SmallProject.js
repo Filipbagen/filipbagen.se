@@ -42,6 +42,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     height: 230px;
     width: 230px;
     margin: 32px;

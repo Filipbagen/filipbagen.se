@@ -118,6 +118,15 @@ const OtherProjectsList = [
         githubLink: 'https://github.com/Filipbagen/guac-a-mole',
         projectLink: 'https://filipbagen.github.io/Guac-a-mole/',
         key: 3
+    },
+    {
+        emoji: "✂️",
+        title: "Looks & Books",
+        text: "A website for a hair saloon in all its simplicity.",
+        tags: ['CSS'],
+        githubLink: 'https://github.com/Filipbagen/looks-and-books',
+        projectLink: 'http://www.looksandbooks.se/',
+        key: 4
     }
 ]
 

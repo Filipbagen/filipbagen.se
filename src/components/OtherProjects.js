@@ -32,4 +32,6 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    width: 1000px;
 `
