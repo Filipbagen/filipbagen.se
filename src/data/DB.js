@@ -1,36 +1,18 @@
-const AboutMe = [
-    {
-        emoji: "👨🏽‍💻",
-        title: "About Me",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
-    },
-    {
-        emoji: "🎯",
-        title: "Experience",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
-    },
-    {
-        emoji: "🚀",
-        title: "Projects",
-        text: "How to study effectively for exams, with the best evidence-based techniques"
-    }
-]
-
 const skills = [
     {
         emoji: "👨🏽‍💻",
         title: "Programming",
-        text: "I am a self-taught coder with " + (new Date().getFullYear() - 2016) + " years of experience. I enjoy the problem-solving aspect of programming and the satisfaction of seeing my code come to life."
+        text: "I am a self-taught coder with over " + (new Date().getFullYear() - 2016) + " years of experience. I enjoy the problem-solving aspect of programming and the satisfaction of seeing my code come to life."
     },
     {
         emoji: "🎨",
         title: "UX-Design",
-        text: "I have a strong sense of graphical design and have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator."
+        text: "I have an eye for graphical design and I have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator."
     },
     {
         emoji: "🎥",
         title: "Photogoraphy",
-        text: "I have been honing my photography and videography skills since I got my first camera, and have experience in both capturing and editing visual content using Final Cut Pro and Premiere Pro."
+        text: "I started photographing and filming when I first got a phone with a built in camera. Since then, I have tried to master the art. This includes editing which I have experience in from both Final Cut Pro and Premiere Pro."
     },
     {
         emoji: "⚙️",
@@ -40,12 +22,33 @@ const skills = [
     {
         emoji: "🔭",
         title: "Creativity",
-        text: " consider myself to be a curious and creative person and I believe that my innate curiosity is the key to discovering new things, solving problems and coming up with innovative solutions."
+        text: "I consider myself to be a curious and creative person and I believe that my innate curiosity is the key to discovering new things, solving problems and coming up with innovative solutions."
     },
     {
         emoji: "🍕",
         title: "Cooking",
-        text: "Not a job I’m looking for and it may not be relevant for my next employer, but I’m a self-appointed master in the kitchen. I just want to brag about it."
+        text: "This is not a job I’m looking for and it may not be relevant for my next employer, but I’m a self-appointed master in the kitchen. I just want to brag about it."
+    }
+]
+
+const Experiences = [
+    {
+        title: "Project Manager at Media Technology Day",
+        date: "April - December 2022",
+        tags: ['Time managment', 'Adaptability', 'Problem solving'],
+        text: ['I managed the work fair at our program, thus planned an agile method which the ten co-workers and I worked after. My most important strategy when planning was to think outside the box and not rely on decisions and plannings from earlier years.', 'Achieved an all time income record while at the same time cut the time frame in half (3 months compared to 6 months).', 'I was involved in developing pricing strategies and I actively sold the product to companies.']
+    },
+    {
+        title: "Programming Tutor at Linköping University",
+        date: "Sep 2021 - Jun 2022",
+        tags: ['Programming', 'Educational'],
+        text: ['I was a part of a student-managed project which helps other students with programming.', 'I helped students with programming questions about JavaScript, C++, MATLAB, OpenGL and Java.']
+    },
+    {
+        title: "Designer & Front End dev. at Unga Utvecklare",
+        date: "May 2016 - Dec 2020",
+        tags: ['UI', 'UX', 'Animation', 'Front End', 'Photographer'],
+        text: ['I ran this consulting firm with a few of my friends. This is where I learnt the basics of customer contact, web development and design principles.', 'I designed 50+ websites, logos, apps and animations, some of which are still up and running.', 'I occasionally acted as a photographer and videographer. I feel confident both behind the camera and when editing.']
     }
 ]
 
@@ -103,25 +106,4 @@ const OtherProjectsList = [
     }
 ]
 
-const Experiences = [
-    {
-        title: "Project Manager @ Media Technology Day",
-        date: "April - December 2022",
-        tags: ['Time managment', 'Adaptability', 'Problem solving'],
-        text: 'Sed vitae arcu. Aliquam erat volutpat. Praesent odio nisl, suscipit at, rhoncus sit amet, porttitor sit amet, leo. Aenean hendrerit est. Etiam ac augue. Morbi tincidunt neque ut lacus. Duis vulputate cursus orci. Mauris justo lorem, scelerisque sit amet, placerat sed.'
-    },
-    {
-        title: "Programming Tutor @ Linköping University",
-        date: "Jan - Feb 2020",
-        tags: ['Programming', 'Tutoring'],
-        text: 'Aenean hendrerit est. Etiam ac augue. Morbi tincidunt neque ut lacus. Duis vulputate cursus orci. Mauris justo lorem, scelerisque sit amet, placerat sed, '
-    },
-    {
-        title: "Unga Utvecklare",
-        date: "Jan - Feb 2020",
-        tags: ['Programming', 'Tutoring'],
-        text: 'Aenean hendrerit est. Etiam ac augue. Morbi tincidunt neque ut lacus. Duis vulputate cursus orci. Mauris justo lorem, scelerisque sit amet, placerat sed, '
-    }
-]
-
-export { AboutMe, skills, ProjectList, OtherProjectsList, Experiences }
+export { skills, ProjectList, OtherProjectsList, Experiences }

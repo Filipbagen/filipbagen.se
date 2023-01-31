@@ -72,7 +72,10 @@ const Experience = () => {
                             )}
                         </Tags>
 
-                        <p>{array.text}</p>
+                        <ul>
+                            {array.text.map(text => <li>{text}</li>)}
+                        </ul>
+
                     </ProjectContent>
 
                 </Test2>

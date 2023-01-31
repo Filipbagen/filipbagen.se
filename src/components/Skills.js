@@ -24,14 +24,6 @@ const Skills = () => {
                 <SkillSection>
                     {skills.map(skill => (<Skill emoji={skill.emoji} title={skill.title} text={skill.text} key={skill.title} />))}
                 </SkillSection>
-
-                <p>
-                    Vestibulum vel metus. Donec sagittis velit vel augue.
-                    Fusce in nisl vitae massa venenatis rhoncus. Praesent
-                    orci velit, lobortis eget, suscipit semper, congue eu,
-                    est. Quisque malesuada volutpat enim.
-                </p>
-
             </TextBox>
 
         </Container>
