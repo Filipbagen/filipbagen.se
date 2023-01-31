@@ -181,10 +181,9 @@ const Buttons = styled.div`
     & > p {
         cursor: pointer;
         margin: 0;
+        padding: 2px 8px;
         transition: .2s;
         color: white;
-        transition: .2s;
-        font-size: 12px;
         border-radius: 6px;
         width: 200px;
 
