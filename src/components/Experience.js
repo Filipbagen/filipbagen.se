@@ -71,7 +71,8 @@ const Experience = () => {
 
 
                         <ul>
-                            {array.text.map(text => <li key={array.key}>{text}</li>)}
+                            {/* Missing key */}
+                            {array.text.map(text => <li>{text}</li>)}
                         </ul>
 
                     </ProjectContent>

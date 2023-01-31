@@ -39,7 +39,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: -460px;
+    margin-top: -360px;
 
     @media (max-width: 670px) {
         margin-top: -14px;
