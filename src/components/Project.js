@@ -11,7 +11,7 @@ const Project = (props) => {
 
     return (
         <Container>
-            <a href={props.projectLink}>
+            <a href={props.projectLink} target="_blank" rel="noopener noreferrer">
                 <Image src={props.image} />
             </a>
 
@@ -30,10 +30,10 @@ const Project = (props) => {
                 {/* only render if there are any links */}
                 <Links>
                     {
-                        props.githubLink !== '' ? (<a href={props.githubLink}><img src={gh} alt="github" /></a>) : (null)
+                        props.githubLink !== '' ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
                     }
                     {
-                        props.projectLink !== '' ? (<a href={props.projectLink}><img src={open} alt="project" /></a>) : (null)
+                        props.projectLink !== '' ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
                     }
                 </Links>
 

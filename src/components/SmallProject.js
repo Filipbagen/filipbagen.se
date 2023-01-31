@@ -23,10 +23,10 @@ const SmallProject = (props) => {
 
                 <Links>
                     {
-                        props.githubLink !== '' ? (<a href={props.githubLink}><img src={gh} alt="github" /></a>) : (null)
+                        props.githubLink !== '' ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
                     }
                     {
-                        props.projectLink !== '' ? (<a href={props.projectLink}><img src={open} alt="project" /></a>) : (null)
+                        props.projectLink !== '' ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
                     }
                 </Links>
 
