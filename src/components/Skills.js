@@ -22,7 +22,7 @@ const Skills = () => {
                 </p>
 
                 <SkillSection>
-                    {skills.map(skill => (<Skill emoji={skill.emoji} title={skill.title} text={skill.text} key={skill.title} />))}
+                    {skills.map(skill => (<Skill emoji={skill.emoji} title={skill.title} text={skill.text} key={skill.key} />))}
                 </SkillSection>
             </TextBox>
 

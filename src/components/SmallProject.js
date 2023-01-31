@@ -18,7 +18,7 @@ const SmallProject = (props) => {
 
             <Info>
                 <Tags>
-                    {props.tags.map(tag => <ProjectTag tag={tag} key={props.openLink} />)}
+                    <ProjectTag tag={props.tag} />
                 </Tags>
 
                 <Links>

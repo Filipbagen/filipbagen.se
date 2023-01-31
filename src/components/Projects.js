@@ -17,17 +17,17 @@ const Projects = () => {
 
             <ProjectsContainer>
                 <Tag title={'🚀 Projects'} />
-                <h1>What Have I Done?</h1>
+                <h1>What I Have Done</h1>
 
                 {ProjectList.map((project, index) => (
                     <Project
                         title={project.title}
                         text={project.text}
                         image={project.image}
-                        tags={project.tags}
+                        tag={project.tags}
                         githubLink={project.githubLink}
                         projectLink={project.projectLink}
-                        key={project.title}
+                        key={project.key}
                     />
                 ))}
             </ProjectsContainer>

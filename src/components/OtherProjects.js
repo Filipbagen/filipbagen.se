@@ -15,9 +15,10 @@ const OtherProjects = () => {
                 emoji={project.emoji}
                 title={project.title}
                 text={project.text}
-                tags={project.tags}
+                tag={project.tags}
                 githubLink={project.githubLink}
                 projectLink={project.projectLink}
+                key={project.key}
             />)}
         </Container>
     )

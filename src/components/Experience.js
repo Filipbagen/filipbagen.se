@@ -66,14 +66,12 @@ const Experience = () => {
                         <h4>{array.date}</h4>
 
                         <Tags>
-                            {array.tags.map(tag => (
-                                <ProjectTag tag={tag} />
-                            )
-                            )}
+                            <ProjectTag tag={array.tags} />
                         </Tags>
 
+
                         <ul>
-                            {array.text.map(text => <li>{text}</li>)}
+                            {array.text.map(text => <li key={array.key}>{text}</li>)}
                         </ul>
 
                     </ProjectContent>

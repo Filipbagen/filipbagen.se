@@ -23,8 +23,9 @@ const Project = (props) => {
                 </Text>
 
                 <Tags>
-                    {props.tags.map(tag => <ProjectTag tag={tag} key={props.githubLink} />)}
+                    <ProjectTag tag={props.tag} />
                 </Tags>
+
 
                 {/* only render if there are any links */}
                 <Links>
