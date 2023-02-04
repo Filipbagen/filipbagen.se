@@ -13,18 +13,18 @@ const AboutMe = () => {
                 <h1 className="gradientText">Who Am I?</h1>
 
                 <p>
-                    Hey there! My name is Filip and I'm a soon-to-be <b>Computer Science
-                        engineer</b>, living in Sweden. I've always been facinated by the endless possibilities that
-                    Artificial Intelligence offers, and I've found that my <b> passion for web design and
+                    Hey there! My name is Filip and I'm a soon-to-be <b>engineer in Computer Science</b>,
+                    living in Sweden. I've always been facinated by the endless possibilities that
+                    Artificial Intelligence offers and I've found that my <b> passion for web design and
                         project management </b> perfectly complements my love for technology. I'm a firm believer
                     that the ability to be curius and to learn new skills is the key to success.
                 </p>
                 <p>
                     When I'm not studying, you can find me <b> building on my own projects </b> using my skills in design and
-                    code development. I find it incredibly fascinating how technology and design can work together to create
-                    something truly beautiful and functional. <b> My curiosity and creativity as given me valuable experience </b>
-                    in developing and deploying production-level code. I am always
-                    eager to learn more and take on new challenges.
+                    code development. I find it incredibly fascinating how <b>technology and design can work together</b> in order to create
+                    something truly beautiful and functional. My earlier work combined with my curiosity have given me <b>valuable experience</b> in
+                    developing and deploying production-level code. I am always eager to learn more
+                    and take on new challenges.
                 </p>
 
             </TextBox>
