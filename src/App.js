@@ -16,10 +16,10 @@ function App() {
       {/* <NavBar /> */}
 
       <HeroSection />
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <Projects />
+      {/* <AboutMe /> */}
+      {/* <Experience /> */}
+      {/* <Skills /> */}
+      {/* <Projects /> */}
     </div>
   );
 }
