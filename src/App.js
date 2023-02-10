@@ -16,7 +16,7 @@ function App() {
       {/* <NavBar /> */}
 
       <HeroSection />
-      {/* <AboutMe /> */}
+      <AboutMe />
       {/* <Experience /> */}
       {/* <Skills /> */}
       {/* <Projects /> */}

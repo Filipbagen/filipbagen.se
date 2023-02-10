@@ -64,6 +64,14 @@ const Head = styled.header`
     background-image: url(${hero});
     background-position: 50% 100%;
     background-size: cover;
+
+    @media (max-width: 670px) {
+        height: 700px;
+    }
+
+    @media (max-height: 800px) {
+        height: 700px;
+    }
 `
 
 const Intro = styled.div`
