@@ -22,18 +22,15 @@ const Project = (props) => {
                     {props.text}
                 </Text>
 
-                <Tags>
-                    <ProjectTag tag={props.tag} />
-                </Tags>
-
+                {/* <ProjectTag tag={props.tag} /> */}
 
                 {/* only render if there are any links */}
                 <Links>
                     {
-                        props.githubLink !== '' ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
+                        props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
                     }
                     {
-                        props.projectLink !== '' ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
+                        props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
                     }
                 </Links>
 
@@ -47,31 +44,31 @@ export default Project
 // Style
 const Container = styled.div`
     color: white;
-    
     display: flex;
-    justify-content: center;
     align-items: center;
-
     margin: 32px;
 
-    @media (max-width: 670px) {
+    @media (max-width: 780px) {
         margin: 0 22px;
     }
 `
 
 const Info = styled.div`
-    margin-left: -52px;
+    margin-left: -120px;
+    max-width: 400px;
+
+    /* background-color: red; */
 
     & > h2 {
         margin: 0;
         text-align: right;
 
-        @media (max-width: 1030px) {
+        @media (max-width: 780px) {
             text-align: left;
         }
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 780px) {
         margin-left: 0;
     }
 `
@@ -80,7 +77,6 @@ const Text = styled.p`
     background-color: white;
     padding: 22px;
     border-radius: 10px;
-    max-width: 400px;
 
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);    
@@ -106,24 +102,22 @@ const Tags = styled.div`
     flex-direction: row;
     justify-content: flex-end;
 
-    @media (max-width: 670px) {
+    @media (max-width: 780px) {
         flex-wrap: wrap;
     }
 `
 
 const Image = styled.img`
+    width: 100%;
+    max-width: 560px;
+    height: auto;
     border-radius: 10px;
-    height: 320px;
-    width: 570px;
-
-    object-fit: cover;
-    transition: .2s;
 
     &:hover {
         cursor: pointer;
     }
 
-    @media (max-width: 1030px) {
+    @media (max-width: 780px) {
         display: none;
     }
 `

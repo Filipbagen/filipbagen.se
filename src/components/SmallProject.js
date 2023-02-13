@@ -17,16 +17,14 @@ const SmallProject = (props) => {
             <p>{props.text}</p>
 
             <Info>
-                <Tags>
-                    <ProjectTag tag={props.tag} />
-                </Tags>
+                <ProjectTag tag={props.tag} />
 
                 <Links>
                     {
-                        props.githubLink !== '' ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
+                        props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
                     }
                     {
-                        props.projectLink !== '' ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
+                        props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
                     }
                 </Links>
 
@@ -43,10 +41,13 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-around;
 
-    height: 230px;
-    width: 230px;
-    margin: 32px;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+
+    box-sizing: border-box;
     padding: 18px;
+    
     border-radius: 12px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
@@ -67,13 +68,6 @@ const Container = styled.div`
         font-size: 14px;
         line-height: 1.5;
     }
-`
-
-const Tags = styled.div`
-    color: white;
-    display: flex;
-    flex-direction: row;
-    margin-left: -6px;
 `
 
 const Links = styled.div`

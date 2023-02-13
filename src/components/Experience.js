@@ -75,7 +75,7 @@ const Container = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 
     margin-top: -120px;
 
@@ -112,6 +112,7 @@ const Wrapper = styled.div`
     display: flex;
     box-sizing: border-box;
     padding: 0 12px;
+    margin: 0 40px;
 
     @media (max-width: 670px) {
         flex-direction: column;
@@ -121,7 +122,9 @@ const Wrapper = styled.div`
 
 const Sidebar = styled.div`
     display: flex;
-    align-items: center;
+    margin-top: 72px;
+    /* align-items: center; */
+    margin-right: 38px;
 
     @media (max-width: 670px) {
         flex-direction: column-reverse;
@@ -145,6 +148,7 @@ const Line = styled.div`
 const Buttons = styled.div`
     display: flex;
     flex-direction: column;
+    width: 200px;
 
     &::-webkit-scrollbar {
         display: none;
@@ -156,6 +160,7 @@ const Buttons = styled.div`
         padding: 2px 8px;
         transition: .2s;
         border-radius: 6px;
+        white-space: nowrap;
 
         &:hover {
             background-color: #4d7ac8;
@@ -176,7 +181,7 @@ const Buttons = styled.div`
 `
 
 const ProjectContent = styled.div`
-    max-width: 700px;
+    max-width: 500px;
 
     /* height: 250px; */
     /* background-color: red; */

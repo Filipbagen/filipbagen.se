@@ -85,7 +85,7 @@ const ProjectList = [
     },
     {
         title: "F1",
-        text: "🏎 It is a website displaying information about Formal 1, that was created with React Three Fiber.",
+        text: "🏎 It is a website displaying information about Formula 1, that was created with React Three Fiber.",
         image: "img/f1.png",
         tags: ['React Three Fiber', 'Blender', 'Physics'],
         githubLink: 'https://github.com/Filipbagen/f1',
@@ -116,7 +116,7 @@ const OtherProjectsList = [
     {
         emoji: "🥑",
         title: "Guac-A-Mole",
-        text: "A Whack-a-mole game made as an inside joke",
+        text: "A Whack-a-mole game made as an inside joke.",
         tags: ['JavaScript'],
         githubLink: 'https://github.com/Filipbagen/guac-a-mole',
         projectLink: 'https://filipbagen.github.io/Guac-a-mole/',
