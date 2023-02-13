@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 // Components
 import Tag from "./Tag"
-import ProjectTag from "./ProjectTag"
+// import ProjectTag from "./ProjectTag"
 
 // Database
 import { Experiences } from "../data/DB"
@@ -45,8 +45,8 @@ const Experience = () => {
                     </Sidebar>
 
                     <ProjectContent>
-                        <h2>🚀 {project.title}</h2>
-                        <h4>📆 {project.date}</h4>
+                        <h2>{project.title}</h2>
+                        <h4>{project.date}</h4>
 
                         {/* <ProjectTag tag={project.tags} /> */}
 
@@ -70,7 +70,7 @@ const Container = styled.div`
 
     width: 100vw;
     min-width: 300px;
-    /* height: 900px; */
+    height: 680px;
     padding: 180px 0;
 
     display: flex;

@@ -5,7 +5,7 @@ import gh from '../img/github.svg'
 import open from '../img/open.svg'
 
 // Components
-import ProjectTag from "./ProjectTag"
+// import ProjectTag from "./ProjectTag"
 
 const Project = (props) => {
 
@@ -94,16 +94,6 @@ const Links = styled.div`
         &:hover {
             transform: scale(1.07);
         }
-    }
-`
-
-const Tags = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-    @media (max-width: 780px) {
-        flex-wrap: wrap;
     }
 `
 
