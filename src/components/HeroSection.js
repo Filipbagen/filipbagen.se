@@ -13,10 +13,10 @@ const HeroSection = () => {
             <Intro>
 
                 <Profile>
-                    <svg width="100%" height="100%" viewBox="0 0 1303 1154" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 1303 1154" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
-                            <stop stop-color="#b3cff2" offset="0" />
-                            <stop stop-color="#3ea5e0" offset="100%" />
+                            <stop stopColor="#b3cff2" offset="0" />
+                            <stop stopColor="#3ea5e0" offset="100%" />
                         </linearGradient>
                         <path
                             fill="url(#gradient)"
@@ -25,10 +25,9 @@ const HeroSection = () => {
                         // stroke="url(#gradient)"
                         // stroke-width="8"
                         />
-
                     </svg>
 
-                    <Pic />
+                    <Pic src={profilePic} />
                 </Profile>
 
                 <Handwritten>
@@ -56,6 +55,7 @@ const move = keyframes`
 const Head = styled.header`
     height: 90vh;
     max-width: 100vw;
+    min-width: 300px;
 
     display: flex;
     justify-content: center;
@@ -81,11 +81,15 @@ const Intro = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 18px;
+
+    margin: 0 28px;
 
     @media (max-width: 670px) {
         bottom: 20px;
+        margin: 0;
         flex-direction: column;
-        gap: 22px;
+        /* gap: 22px; */
     }
 `
 
@@ -97,8 +101,10 @@ const Profile = styled.div`
     // Border
     & > svg {
         position: absolute;
-        height: 270px;
-        width: 270px;
+
+        width: 100%;
+        max-width: 270px;
+        height: auto;
 
         animation: ${move} 20s linear infinite;
         animation-direction: alternate;
@@ -106,21 +112,21 @@ const Profile = styled.div`
     }
 `
 
-const Pic = styled.div`
-    background-image: url(${profilePic});
-    background-size: cover;
-    border-radius: 50%;
-    height: 210px;
+const Pic = styled.img`    
     width: 210px;
+    height: auto;
+
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 `
 
 const Handwritten = styled.div`
-    margin-left: 60px;
-    width: 340px;
+    box-sizing: border-box;
 
     @media (max-width: 670px) {
         text-align: center;
-        margin: 0;
     }
 
     & > p {
@@ -129,6 +135,6 @@ const Handwritten = styled.div`
     }
 
     & > img {
-        height: 100px;
+        max-height: 100px;
     }
 `

@@ -36,6 +36,7 @@ export default AboutMe
 // Style
 const Container = styled.div`
     width: 100vw;
+    min-width: 300px;
     margin-top: -200px;
 
     display: flex;
@@ -56,10 +57,12 @@ const TextBox = styled.div`
     flex-direction: column;
 
     padding-top: 28px;
+    margin: 0 12px;
     max-width: 800px;
     border-radius: 18px;
 
     & > p {
+        box-sizing: border-box;
         padding: 0 38px;
     }
 

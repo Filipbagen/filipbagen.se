@@ -19,15 +19,27 @@ const Tags = styled.div`
     flex-direction: row;
     gap: 6px;
 
-    @media (max-width: 670px) {
-        flex-wrap: wrap;
+    flex-direction: row;
+    overflow: scroll;
+    white-space: nowrap;
+    min-width: 280px;
+    width: 50vw;
+    max-width: 1000px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & > p {
+        margin: 0;
+        border-radius: 50px;
     }
 `
 
 const Tag = styled.p`
     font-size: 14px;
     padding: 6px 18px;
-    /* margin: 0 2px; */
+    margin: 0;
     background-color: #4d7ac8;
     border-radius: 32px;
     color: white;

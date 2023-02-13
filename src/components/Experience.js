@@ -12,167 +12,139 @@ const Experience = () => {
 
     const [num, setNum] = useState(0)
 
-    function MTD() {
-        setNum(0);
-
+    const handleButtonClick = (index) => {
+        setNum(index)
     }
 
-    function LiU() {
-        setNum(1);
-    }
+    const project = Experiences[num]
 
-    function UU() {
-        setNum(2);
-    }
-
-    const array = Experiences[num]
 
     return (
-        <Content id="experience">
-
-            <Container>
+        <Container id="experience">
+            <Content>
                 <Tag title={'🗺️ Experience'} />
                 <h1>Where I Have Worked</h1>
 
+                <Wrapper>
 
-                <Test2>
-
-                    <Test>
+                    <Sidebar>
                         <Line />
 
                         <Buttons>
-                            <p onClick={MTD}
-                                style={{
-                                    fontWeight: num === 0 ? 'bold' : 'normal',
-                                    color: num === 0 ? 'white' : '#a0bcdf'
-                                }}>Media Technology Day</p>
-
-                            <p onClick={LiU}
-                                style={{
-                                    fontWeight: num === 1 ? 'bold' : 'normal',
-                                    color: num === 1 ? 'white' : '#a0bcdf'
-                                }}>Linköping University</p>
-
-                            <p onClick={UU}
-                                style={{
-                                    fontWeight: num === 2 ? 'bold' : 'normal',
-                                    color: num === 2 ? 'white' : '#a0bcdf'
-                                }}>Unga Utvecklare</p>
+                            {Experiences.map((experience, index) => (
+                                <p
+                                    key={experience.keys[index]}
+                                    onClick={() => handleButtonClick(index)}
+                                    style={{
+                                        fontWeight: num === index ? 'bold' : 'normal',
+                                        color: num === index ? 'white' : '#a0bcdf'
+                                    }}>
+                                    {experience.employer}
+                                </p>))}
                         </Buttons>
-                    </Test>
+                    </Sidebar>
 
                     <ProjectContent>
-                        <h2>{array.title}</h2>
-                        <h4>{array.date}</h4>
+                        <h2>🚀 {project.title}</h2>
+                        <h4>📆 {project.date}</h4>
 
-                        <Tags>
-                            <ProjectTag tag={array.tags} />
-                        </Tags>
-
+                        {/* <ProjectTag tag={project.tags} /> */}
 
                         <ul>
-                            {/* Missing key */}
-                            {array.text.map(text => <li>{text}</li>)}
+                            {project.text.map(text => <li>{text}</li>)}
                         </ul>
-
                     </ProjectContent>
 
-                </Test2>
-
-            </Container>
-
-        </Content>
+                </Wrapper>
+            </Content>
+        </Container>
     )
 }
 
 export default Experience
 
 //Style
-const Content = styled.div`
-    width: 100vw;
-    height: 1200px;
-
+const Container = styled.div`
     background: -webkit-linear-gradient(#5A9CDA, #4684BF);
+    color: white;
+
+    width: 100vw;
+    min-width: 300px;
+    /* height: 900px; */
+    padding: 180px 0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    margin-top: -150px;
+    margin-top: -120px;
 
     @media (max-width: 670px) {
-        margin-top: -190px;
-        height: 930px;
+        /* margin-top: -190px; */
+        /* height: 930px; */
     }
 `
 
-const Container = styled.div`
+const Content = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 
-    margin-top: -320px;
+    /* margin-top: -320px; */
 
-    color: white;
+    @media (max-width: 670px) {
+        /* margin-top: 22px; */
+    }
 
     & > h1 {
         margin: 0;
         font-size: 56px;
-        color: white;
+        text-align: center;
 
         @media (max-width: 670px) {
-            font-size: 26px;
+            font-size: 28px;
             margin-bottom: 38px;
         }
     }
+`
+
+const Wrapper = styled.div`
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 12px;
 
     @media (max-width: 670px) {
-        margin-top: 22px;
+        flex-direction: column;
+        padding: 0;
     }
 `
 
-const Test = styled.div`
+const Sidebar = styled.div`
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
 
-    @media (max-width: 740px) {
+    @media (max-width: 670px) {
         flex-direction: column-reverse;
     }
 `
 
-const Test2 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+const Line = styled.div`
+    height: 110px;
+    width: 3px;
+    background-color: white;
+    border-radius: 99px;
 
-    @media (max-width: 740px) {
-        flex-direction: column;
-    }
-`
-
-const Tags = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    overflow: scroll;
-
-    @media (max-width: 740px) {
-        max-width: 300px;
-    }
-
-    &::-webkit-scrollbar {
-        display: none;
+    @media (max-width: 670px) {
+        width: 95%;
+        height: 2px;
+        margin-top: 12px;
+        opacity: .4;
     }
 `
 
 const Buttons = styled.div`
     display: flex;
     flex-direction: column;
-    position: relative;
 
     &::-webkit-scrollbar {
         display: none;
@@ -183,33 +155,35 @@ const Buttons = styled.div`
         margin: 0;
         padding: 2px 8px;
         transition: .2s;
-        color: white;
         border-radius: 6px;
-        width: 200px;
 
         &:hover {
             background-color: #4d7ac8;
         }
 
-        @media (max-width: 740px) {
+        @media (max-width: 670px) {
             padding: 8px 8px;
             font-size: 14px;
         }
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: 670px) {
         flex-direction: row;
         overflow: scroll;
         white-space: nowrap;
         width: 90vw;
-        overflow: scroll;
     }
 `
 
 const ProjectContent = styled.div`
     max-width: 700px;
-    margin: 0 32px;
-    height: 250px;
+
+    /* height: 250px; */
+    /* background-color: red; */
+
+    height: 100%;
+    /* height: 360px; */
+    width: auto;
 
     & > h2 {
         margin: 0;
@@ -222,30 +196,15 @@ const ProjectContent = styled.div`
         font-size: 14px;
     }
 
-    & > p {
-        color: white;
-        max-width: 550px;
+    & > ul {
+        padding-left: 16px;
+
+        & > li {
+            margin: 10px 0;
+        }
     }
 
     @media (max-width: 670px) {
-        margin-top: 28px;
+        margin: 28px 32px 0 32px;
     }
-`
-
-const Line = styled.div`
-    height: 110px;
-    width: 3px;
-    background-color: white;
-    border-radius: 99px;
-    margin: 0 20px;
-
-    @media (max-width: 740px) {
-        width: 100%;
-        height: 2px;
-        margin-top: 12px;
-        opacity: .4;
-    }
-    
-    
-
 `
