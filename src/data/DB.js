@@ -6,16 +6,10 @@ const skills = [
         key: 1
     },
     {
-        emoji: "🎨",
-        title: "UX-Design",
-        text: "I have an eye for graphical design and I have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator.",
-        key: 2
-    },
-    {
-        emoji: "🎥",
-        title: "Photogoraphy",
-        text: "I started photographing and filming when I  first got a phone with a built in camera. Since then, I have tried to master the art. This includes editing, which I have experience in from both Final Cut Pro and Premiere Pro.",
-        key: 3
+        emoji: "🔭",
+        title: "Creativity",
+        text: "I consider myself to be a curious and creative person and I believe that my curiosity is the key to discovering new things, solving problems and coming up with innovative solutions.",
+        key: 5
     },
     {
         emoji: "⚙️",
@@ -24,10 +18,16 @@ const skills = [
         key: 4
     },
     {
-        emoji: "🔭",
-        title: "Creativity",
-        text: "I consider myself to be a curious and creative person and I believe that my curiosity is the key to discovering new things, solving problems and coming up with innovative solutions.",
-        key: 5
+        emoji: "🎥",
+        title: "Photogoraphy",
+        text: "I started photographing and filming when I  first got a phone with a built in camera. Since then, I have tried to master the art. This includes editing, which I have experience in from both Final Cut Pro and Premiere Pro.",
+        key: 3
+    },
+    {
+        emoji: "🎨",
+        title: "UX-Design",
+        text: "I have an eye for graphical design and I have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator.",
+        key: 2
     },
     {
         emoji: "🍕",

@@ -27,7 +27,6 @@ const Skills = () => {
             </TextBox>
 
         </Container>
-
     )
 }
 
@@ -35,37 +34,48 @@ export default Skills
 
 // Style
 const Container = styled.div`
+    width: 100vw;
+    min-width: 300px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    margin-top: -360px;
+    margin-top: -140px;
 
     @media (max-width: 670px) {
-        margin-top: -14px;
+        /* margin-top: -14px; */
         height: 100%;
     }
 `
 
 const TextBox = styled.div`
+    background-color: white;
+
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 
+    box-sizing: border-box;
+    padding: 34px 58px;
+    margin: 0 12px;
     max-width: 800px;
-    background-color: white;
+    border-radius: 18px;
+    
     -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.2);
-    padding: 34px 58px;
-    border-radius: 18px;
+
+    @media (max-width: 670px) {
+        padding: 34px 48px;
+    }
 
     & > h1 {
         margin: 0;
         font-size: 56px;
+        text-align: center;
 
         @media (max-width: 670px) {
             font-size: 36px;
+            padding: 0;
         }
     }
 `

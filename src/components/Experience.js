@@ -102,7 +102,7 @@ const Content = styled.div`
         text-align: center;
 
         @media (max-width: 670px) {
-            font-size: 28px;
+            font-size: 36px;
             margin-bottom: 38px;
         }
     }
