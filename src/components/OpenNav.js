@@ -2,22 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "react-scroll"
 
-// Components
-// import Hamburger from "./Hamburger"
-
-const NavBar = () => {
+const OpenNav = ({ open }) => {
 
     return (
-        <Nav id="top">
-            {/* Open Resume */}
-            <Contact>
-                <a href="mailto:filip.bagen@gmail.com"><span role="img" aria-label="email">📨</span> Contact me</a>
-            </Contact>
-
-            {/* <Hamburger /> */}
-
+        <Nav open={open}>
             <Navigation>
-                <Link to="about" spy={true} smooth={true} offset={-20} duration={500}>About Me</Link>
+                <Link onClick={() => { }} to="about" spy={true} smooth={true} offset={-20} duration={500}>About Me</Link>
                 <Link to="experience" spy={true} smooth={true} offset={160} duration={500}>Experience</Link>
                 <Link to="skills" spy={true} smooth={true} offset={-20} duration={500}>Skills</Link>
                 <Link to="projects" spy={true} smooth={true} offset={180} duration={500}>Projects</Link>
@@ -32,65 +22,45 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default OpenNav
 
-// Syle
+// Style
 const Nav = styled.div`
-    z-index: 2;
-    max-width: 100vw;
-    width: 100vw;
-    min-width: 300px;
-    height: 76px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
+    z-index: -1;
+    display: none;
+    text-align: center;
+    transition: .2s;
     box-sizing: border-box;
-    padding: 0 28px;
+    /* padding-right: 32px; */
+    background-color: rgba(50, 88, 136, 0.5);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    top: 76px;
+    left: 0;
+    height: 400px;
+    width: 100vw;
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    @media (max-width: 590px) {
+        display: block;
+
+        transform: ${function ({ open }) {
+        return open ? 'translateX(0)' : 'translateX(100%)'
+    }};
+    }
 `
 
 const Navigation = styled.div`
     display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-    max-width: 360px;
+    flex-direction: column;
 
     & > a {
         color: #f2f2f2;
-        white-space: nowrap;
-        text-decoration: none;
-        transition: .2s;
-        padding: 12px;
+        margin-bottom: 24px;
+        font-size: 18px;
 
         &:hover {
-            cursor: pointer;
             text-shadow: 0 2px 28px pink;
-        } 
-    }
-
-    @media (max-width: 590px) {
-        display: none;
-    }
-`
-
-const Contact = styled.div`
-
-    & > a {
-        color: #f2f2f2;
-        white-space: nowrap;
-        text-decoration: none;
-        transition: .2s;
-        padding: 12px;
-
-        &:hover {
             cursor: pointer;
-            text-shadow: 0 2px 28px pink;
-        } 
+        }
     }
 `

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "react-scroll"
 
 // Components
 import Tag from "./Tag"
@@ -45,6 +46,8 @@ const Projects = () => {
                 />)}
             </OtherProjects>
 
+            <Link to="top" spy={true} smooth={true} offset={-20} duration={500}><span role="img" aria-label="top">⬆</span> Back to Top <span role="img" aria-label="top">⬆</span></Link>
+
             <Footer />
 
         </Container>
@@ -84,6 +87,19 @@ const Container = styled.div`
         @media (max-width: 780px) {
             font-size: 36px;
             margin-bottom: 24px;
+        }
+    }
+
+    & > a {
+        margin-top: 54px;
+        font-size: 12px;
+        padding: 14px;
+        border-radius: 8px;
+        background-color: white;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
         }
     }
 `
