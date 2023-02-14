@@ -124,9 +124,12 @@ const Pic = styled.img`
 
 const Handwritten = styled.div`
     box-sizing: border-box;
+    max-width: 360px;
+    margin-left: 20px;
 
     @media (max-width: 670px) {
         text-align: center;
+        margin: 0;
     }
 
     & > p {
@@ -136,5 +139,6 @@ const Handwritten = styled.div`
 
     & > img {
         max-height: 100px;
+        margin: 0 18px;
     }
 `

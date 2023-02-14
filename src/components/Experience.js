@@ -70,31 +70,19 @@ const Container = styled.div`
 
     width: 100vw;
     min-width: 300px;
-    height: 680px;
-    padding: 180px 0;
+    min-height: 680px;
+    padding: 200px 0;
+    margin-top: -150px;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-
-    margin-top: -120px;
-
-    @media (max-width: 670px) {
-        /* margin-top: -190px; */
-        /* height: 930px; */
-    }
+    justify-content: center;
 `
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* margin-top: -320px; */
-
-    @media (max-width: 670px) {
-        /* margin-top: 22px; */
-    }
 
     & > h1 {
         margin: 0;
@@ -103,7 +91,7 @@ const Content = styled.div`
 
         @media (max-width: 670px) {
             font-size: 36px;
-            margin-bottom: 38px;
+            /* margin-bottom: 38px; */
         }
     }
 `
@@ -123,7 +111,7 @@ const Wrapper = styled.div`
 const Sidebar = styled.div`
     display: flex;
     margin-top: 72px;
-    /* align-items: center; */
+    align-items: center;
     margin-right: 38px;
 
     @media (max-width: 670px) {
@@ -176,18 +164,13 @@ const Buttons = styled.div`
         flex-direction: row;
         overflow: scroll;
         white-space: nowrap;
-        width: 90vw;
+        width: 80vw;
     }
 `
 
 const ProjectContent = styled.div`
     max-width: 500px;
-
-    /* height: 250px; */
-    /* background-color: red; */
-
     height: 100%;
-    /* height: 360px; */
     width: auto;
 
     & > h2 {
