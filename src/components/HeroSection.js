@@ -6,6 +6,7 @@ import NavBar from "./NavBar"
 
 // img
 import hero from "../img/hero.svg"
+// import hero1 from '../img/hero1.svg'
 
 const HeroSection = () => {
 
@@ -57,7 +58,7 @@ const move = keyframes`
 
 // Style
 const Head = styled.header`
-    height: 90vh;
+    height: 80vh;
     max-width: 100vw;
     min-width: 300px;
 
@@ -67,7 +68,7 @@ const Head = styled.header`
     flex-direction: column;
 
     background-image: url(${hero});
-    background-position: 50% 100%;
+    background-position: 50% 99%;
     background-size: cover;
 
     @media (max-width: 670px) {
