@@ -26,7 +26,7 @@ const skills = [
     {
         emoji: "🎨",
         title: "UX-Design",
-        text: "I have an eye for graphical design and I have designed several active apps and websites. My skills include using Affinity Designer and Adobe Illustrator.",
+        text: "I have an eye for graphical design and I have designed several active apps and websites. My skills include using Figma, Affinity Designer and Adobe Illustrator.",
         key: 2
     },
     {
