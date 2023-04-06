@@ -43,7 +43,11 @@ const Experiences = [
         employer: "Media Technology Day",
         date: "April - December 2022",
         tags: ['Time Managment', 'Adaptability', 'Problem Solving'],
-        text: ['I managed the work fair for our program, thus I planned an agile method which ten co-workers and I worked after. My most important strategy, when planning, was to think outside of the box and not rely on decisions and plannings from earlier years. I wanted to initiate innovative thinking because I wished to encourage them to develop the work process. ', 'We achieved an all time income record while at the same time cut the working time-frame in half (3 months compared to 6 months).', 'I was involved in developing pricing strategies and I actively sold the product to companies.'],
+        text: [
+            'I managed the work fair for our program by implementing an agile method with ten colleagues My key strategy was to think innovatively and not rely on decisions and plannings from earlier years to encourage the development of our own work process.',
+            'We achieved an all time income record while at the same time cut the working time-frame in half (3 months compared to 6 months).',
+            'I was involved in developing pricing strategies and I actively sold the product to companies.'
+        ],
         keys: [1, 2, 3]
     },
     {
@@ -51,7 +55,10 @@ const Experiences = [
         employer: "Linköping University",
         date: "Sep 2021 - Jun 2022",
         tags: ['Programming', 'Tutoring'],
-        text: ['I was a part of a student-managed project which helps other students with programming.', 'I helped students with programming questions about JavaScript, C++, MATLAB, OpenGL and Java.'],
+        text: [
+            'I was a part of a student-managed project which helps other students with programming.',
+            'I helped students with programming questions about JavaScript, C++, MATLAB, OpenGL and Java.'
+        ],
         keys: [1, 2]
     },
     {
@@ -59,7 +66,11 @@ const Experiences = [
         employer: "Unga Utvecklare",
         date: "May 2016 - Dec 2020",
         tags: ['UI', 'UX', 'Animation', 'Front End', 'Photographer'],
-        text: ['I ran this consulting firm with a few of my friends. This is where I learnt the basics of customer contact, web development and design principles.', 'I designed 50+ websites, logos, apps and animations, some of which are still up and running.', ' I occasionally acted as a photographer and videographer. I feel confident both behind the camera and while editing.'],
+        text: [
+            'I ran this consulting firm with a few of my friends. This is where I learnt the basics of customer contact, web development and design principles.',
+            'I designed 50+ websites, logos, apps and animations, some of which are still up and running.',
+            'I occasionally acted as a photographer and videographer. I feel confident both behind the camera and while editing.'
+        ],
         keys: [1, 2, 3]
     }
 ]

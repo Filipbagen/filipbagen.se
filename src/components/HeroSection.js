@@ -60,7 +60,7 @@ const move = keyframes`
 const Head = styled.header`
     height: 80vh;
     max-width: 100vw;
-    min-width: 300px;
+    min-width: 380px;
 
     display: flex;
     justify-content: center;

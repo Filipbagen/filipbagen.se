@@ -35,7 +35,7 @@ export default Skills
 // Style
 const Container = styled.div`
     width: 100vw;
-    min-width: 300px;
+    min-width: 380px;
 
     display: flex;
     justify-content: center;

@@ -59,7 +59,7 @@ export default Projects
 // Style
 const Container = styled.div`
     width: 100vw;
-    min-width: 300px;
+    min-width: 380px;
 
     padding-top: 200px;
     margin-top: -160px;

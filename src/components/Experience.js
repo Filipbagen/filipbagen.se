@@ -26,7 +26,6 @@ const Experience = () => {
                 <h1>Where I Have Worked</h1>
 
                 <Wrapper>
-
                     <Sidebar>
                         <Line />
 
@@ -54,7 +53,6 @@ const Experience = () => {
                             {project.text.map(text => <li>{text}</li>)}
                         </ul>
                     </ProjectContent>
-
                 </Wrapper>
             </Content>
         </Container>
@@ -69,20 +67,25 @@ const Container = styled.div`
     color: white;
 
     width: 100vw;
-    min-width: 300px;
+    min-width: 380px;
     min-height: 680px;
-    padding: 200px 0;
+    padding: 100px 0 300px 0;
     margin-top: -150px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    @media (max-width: 670px) {
+        padding: 200px 0;
+        min-height: 880px;
+    }
 `
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 
     & > h1 {
         margin: 0;
@@ -91,31 +94,42 @@ const Content = styled.div`
 
         @media (max-width: 670px) {
             font-size: 36px;
-            /* margin-bottom: 38px; */
+            /* margin-top: -100px; */
         }
+    }
+
+    @media (max-width: 670px) {
+        margin-top: 0px;
     }
 `
 
 const Wrapper = styled.div`
+    height: 240px;
+
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
     box-sizing: border-box;
+
     padding: 0 12px;
     margin: 0 40px;
 
     @media (max-width: 670px) {
         flex-direction: column;
         padding: 0;
+        height: 440px;
     }
 `
 
 const Sidebar = styled.div`
     display: flex;
-    margin-top: 72px;
+
     align-items: center;
     margin-right: 38px;
 
     @media (max-width: 670px) {
         flex-direction: column-reverse;
+        margin-top: 22px;
     }
 `
 

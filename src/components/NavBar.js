@@ -37,8 +37,9 @@ export default NavBar
 // Syle
 const Nav = styled.div`
     z-index: 2;
-    width: 840px;
-    min-width: 300px;
+    max-width: 840px;
+    width: 100%;
+    min-width: 380px;
     height: 76px;
     position: absolute;
     top: 0;
