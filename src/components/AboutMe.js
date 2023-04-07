@@ -58,6 +58,7 @@ const TextBox = styled.div`
 
     padding-top: 28px;
     margin: 0 12px;
+    padding: 22px 0;
     max-width: 800px;
     border-radius: 18px;
 

@@ -19,14 +19,14 @@ const Project = (props) => {
 
             <Info
                 style={{
-                    marginLeft: props.flip ? '0' : '-120px',
-                    marginRight: props.flip ? '-120px' : '0',
+                    marginLeft: props.flip ? '0' : '-100px',
+                    marginRight: props.flip ? '-100px' : '0',
                     zIndex: props.flip ? '1' : '0',
                     alignItems: props.flip ? 'flex-start' : 'flex-end',
                 }}>
                 <h2>{props.title}</h2>
 
-                <Text>{props.emoji} {props.text}</Text>
+                <Text>{props.emoji}{props.text}</Text>
 
                 {/* only render if there are any links */}
                 <Links>
@@ -106,7 +106,7 @@ const Links = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    max-width: 560px;
+    max-width: 540px;
     height: auto;
     border-radius: 10px;
 
