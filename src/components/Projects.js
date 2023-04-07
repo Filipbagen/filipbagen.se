@@ -10,47 +10,46 @@ import SmallProject from "./SmallProject"
 
 // Database
 import { ProjectList } from "../data/DB"
-import { OtherProjectsList } from '../data/DB'
 
 const Projects = () => {
 
+    {/* Only display the first 3 projects in big format, and the other in small format */ }
+    const projects = ProjectList.reduce((result, project, index) => {
+        const Component = index < 3 ? Project : SmallProject
+
+        const props = {
+            title: project.title,
+            emoji: project.emoji,
+            text: project.text,
+            image: project.image,
+            tag: project.tags,
+            githubLink: project.githubLink,
+            projectLink: project.projectLink,
+            key: project.key,
+            flip: index % 2 === 0 ? false : true
+        }
+
+        result[index < 3 ? 0 : 1].push(<Component {...props} />)
+
+        return result
+
+    }, [[], []])
+
     return (
         <Container id="projects">
-
             <Tag title={'🚀 Projects'} />
             <h1>What I Have Done</h1>
 
-            {ProjectList.map((project, index) => (
-                <Project
-                    title={project.title}
-                    text={project.text}
-                    image={project.image}
-                    tag={project.tags}
-                    githubLink={project.githubLink}
-                    projectLink={project.projectLink}
-                    key={project.key}
-                    flip={index % 2 === 0 ? false : true}
-                />
-            ))}
+            {/* Render first part */}
+            <div>{projects[0]}</div>
 
+            {/* Render second part */}
             <h2>Other Noteworthy Projects</h2>
-
-            <OtherProjects>
-                {OtherProjectsList.map(project => <SmallProject
-                    emoji={project.emoji}
-                    title={project.title}
-                    text={project.text}
-                    tag={project.tags}
-                    githubLink={project.githubLink}
-                    projectLink={project.projectLink}
-                    key={project.key}
-                />)}
-            </OtherProjects>
+            <OtherProjects>{projects[1]}</OtherProjects>
 
             <Link to="top" spy={true} smooth={true} offset={-20} duration={500}><span role="img" aria-label="top">⬆</span> Back to Top <span role="img" aria-label="top">⬆</span></Link>
 
             <Footer />
-
         </Container>
     )
 }
@@ -112,6 +111,6 @@ const OtherProjects = styled.div`
     justify-content: center;
     gap: 16px;
 
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 18px;
 `

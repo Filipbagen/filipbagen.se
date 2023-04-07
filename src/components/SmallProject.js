@@ -19,13 +19,10 @@ const SmallProject = (props) => {
             <Info>
                 <ProjectTag tag={props.tag} />
 
+                {/* only render if there are any links */}
                 <Links>
-                    {
-                        props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
-                    }
-                    {
-                        props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
-                    }
+                    {props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)}
+                    {props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)}
                 </Links>
 
             </Info>

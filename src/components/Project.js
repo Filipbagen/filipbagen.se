@@ -26,7 +26,7 @@ const Project = (props) => {
                 }}>
                 <h2>{props.title}</h2>
 
-                <Text>{props.text}</Text>
+                <Text>{props.emoji} {props.text}</Text>
 
                 {/* only render if there are any links */}
                 <Links>

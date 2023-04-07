@@ -77,15 +77,17 @@ const Experiences = [
 
 const ProjectList = [
     {
+        emoji: "🔥",
         title: "Firebase Authentication",
-        text: "🔥 I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation.",
+        text: "I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation.",
         image: 'img/dashboard.png',
         tags: ['Server', 'React', 'API'],
         key: 1
     },
     {
+        emoji: "🚀",
         title: "Rocket Simulation",
-        text: "🚀 I participated in a group project where we modeled and simulated a rocket in a 3D environment using realistic physics with adjustable variables, such as thrust and angle, programmed in plain JavaScript.",
+        text: "I participated in a group project where we modeled and simulated a rocket in a 3D environment using realistic physics with adjustable variables, such as thrust and angle, programmed in plain JavaScript.",
         image: 'img/rocket.png',
         tags: ['ThreeJS', 'Physics', 'Blender'],
         githubLink: 'https://github.com/Filipbagen/rocket-simulation',
@@ -94,50 +96,15 @@ const ProjectList = [
 
     },
     {
-        title: "Rocket Simulation",
-        text: "🚀 I participated in a group project where we modeled and simulated a rocket in a 3D environment using realistic physics with adjustable variables, such as thrust and angle, programmed in plain JavaScript.",
+        emoji: "🤖",
+        title: "Virtual Guide",
+        text: "My Bachelor project involved programming a virtual guide using sound-to-text conversion, an AI chatbot, and text-to-speech synthesis, alongside image analysis for user interaction. The project aimed to enhance visitors' experience at the exhibition, providing them with an interactive way to ask questions while showcasing the potential of AI and computer vision.",
         image: 'img/rocket.png',
-        tags: ['ThreeJS', 'Physics', 'Blender'],
-        githubLink: 'https://github.com/Filipbagen/rocket-simulation',
-        projectLink: 'https://filipbagen.github.io/rocket-simulation/',
+        tags: ['Python', 'AI', 'Image analysis'],
+        githubLink: 'https://github.com/Filipbagen/virtual-guide',
         key: 3
 
     },
-
-
-
-
-
-    {
-        title: "Merit",
-        text: "📚 Merit is a web application that gathers schedules, current courses, future examinations and exam statistics for MT students at Linköping University.",
-        image: 'img/merit.png',
-        tags: ['React', 'Styled Components', 'API'],
-        githubLink: 'https://github.com/Filipbagen/merit',
-        projectLink: 'https://filipbagen.github.io/merit/',
-        key: 4
-    },
-    {
-        title: "Lego Search Engine",
-        text: "🧱 This is a school project in the course TNMK30, which lets you search for Lego sets.",
-        image: "img/lego.png",
-        tags: ['VS Code', 'JavaScript', 'SQL', 'CSS'],
-        githubLink: 'https://github.com/Filipbagen/lego-database',
-        projectLink: 'http://www.student.itn.liu.se/~filma379/Legodatabas/index.php',
-        key: 5
-    },
-    {
-        title: "F1",
-        text: "🏎 It is a website displaying information about Formula 1, that was created with React Three Fiber.",
-        image: "img/f1.png",
-        tags: ['React Three Fiber', 'Blender', 'Physics'],
-        githubLink: 'https://github.com/Filipbagen/f1',
-        projectLink: '',
-        key: 6
-    }
-]
-
-const OtherProjectsList = [
     {
         emoji: "🪐",
         title: "Solar System",
@@ -145,7 +112,7 @@ const OtherProjectsList = [
         tags: ['ThreeJS'],
         githubLink: 'https://github.com/Filipbagen/threejs-solar-system',
         projectLink: 'https://filipbagen.github.io/threejs-solar-system/',
-        key: 1
+        key: 4
     },
     {
         emoji: "🗺️",
@@ -154,16 +121,7 @@ const OtherProjectsList = [
         tags: ['React'],
         githubLink: 'https://github.com/Filipbagen/country-finder',
         projectLink: 'https://filipbagen.github.io/country-finder/',
-        key: 2
-    },
-    {
-        emoji: "🥑",
-        title: "Guac-A-Mole",
-        text: "A Whack-a-mole game made as an inside joke.",
-        tags: ['JavaScript'],
-        githubLink: 'https://github.com/Filipbagen/guac-a-mole',
-        projectLink: 'https://filipbagen.github.io/Guac-a-mole/',
-        key: 3
+        key: 5
     },
     {
         emoji: "✂️",
@@ -172,8 +130,39 @@ const OtherProjectsList = [
         tags: ['CSS'],
         githubLink: 'https://github.com/Filipbagen/looks-and-books',
         projectLink: 'http://www.looksandbooks.se/',
-        key: 4
+        key: 6
+    },
+    {
+        emoji: "📚",
+        title: "Merit",
+        text: "Merit is a web app that collects schedules, courses, exams, and stats for MT students at LiU.",
+        image: 'img/merit.png',
+        tags: ['React'],
+        githubLink: 'https://github.com/Filipbagen/merit',
+        projectLink: 'https://filipbagen.github.io/merit/',
+        key: 7
+    },
+    {
+        emoji: "🧱",
+        title: "Lego Search Engine",
+        text: "This is a Google inspired search engine which lets you search for Lego bricks, Lego sets and .",
+        image: "img/lego.png",
+        tags: ['SQL'],
+        githubLink: 'https://github.com/Filipbagen/lego-database',
+        projectLink: 'http://www.student.itn.liu.se/~filma379/Legodatabas/index.php',
+        key: 8
+    },
+    {
+        emoji: "🏎",
+        title: "F1",
+        text: "It is a website displaying information about Formula 1, that was created with React Three Fiber.",
+        image: "img/f1.png",
+        tags: ['React Three Fiber'],
+        githubLink: 'https://github.com/Filipbagen/f1',
+        key: 9
     }
 ]
 
-export { skills, ProjectList, OtherProjectsList, Experiences }
+
+
+export { skills, ProjectList, Experiences }
