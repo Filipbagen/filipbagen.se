@@ -77,13 +77,45 @@ const Experiences = [
 
 const ProjectList = [
     {
+        title: "Firebase Authentication",
+        text: "🔥 I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation.",
+        image: 'img/dashboard.png',
+        tags: ['Server', 'React', 'API'],
+        key: 1
+    },
+    {
+        title: "Rocket Simulation",
+        text: "🚀 I participated in a group project where we modeled and simulated a rocket in a 3D environment using realistic physics with adjustable variables, such as thrust and angle, programmed in plain JavaScript.",
+        image: 'img/rocket.png',
+        tags: ['ThreeJS', 'Physics', 'Blender'],
+        githubLink: 'https://github.com/Filipbagen/rocket-simulation',
+        projectLink: 'https://filipbagen.github.io/rocket-simulation/',
+        key: 2
+
+    },
+    {
+        title: "Rocket Simulation",
+        text: "🚀 I participated in a group project where we modeled and simulated a rocket in a 3D environment using realistic physics with adjustable variables, such as thrust and angle, programmed in plain JavaScript.",
+        image: 'img/rocket.png',
+        tags: ['ThreeJS', 'Physics', 'Blender'],
+        githubLink: 'https://github.com/Filipbagen/rocket-simulation',
+        projectLink: 'https://filipbagen.github.io/rocket-simulation/',
+        key: 3
+
+    },
+
+
+
+
+
+    {
         title: "Merit",
         text: "📚 Merit is a web application that gathers schedules, current courses, future examinations and exam statistics for MT students at Linköping University.",
         image: 'img/merit.png',
         tags: ['React', 'Styled Components', 'API'],
         githubLink: 'https://github.com/Filipbagen/merit',
         projectLink: 'https://filipbagen.github.io/merit/',
-        key: 1
+        key: 4
     },
     {
         title: "Lego Search Engine",
@@ -92,7 +124,7 @@ const ProjectList = [
         tags: ['VS Code', 'JavaScript', 'SQL', 'CSS'],
         githubLink: 'https://github.com/Filipbagen/lego-database',
         projectLink: 'http://www.student.itn.liu.se/~filma379/Legodatabas/index.php',
-        key: 2
+        key: 5
     },
     {
         title: "F1",
@@ -101,7 +133,7 @@ const ProjectList = [
         tags: ['React Three Fiber', 'Blender', 'Physics'],
         githubLink: 'https://github.com/Filipbagen/f1',
         projectLink: '',
-        key: 3
+        key: 6
     }
 ]
 

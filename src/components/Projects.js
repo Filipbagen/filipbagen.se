@@ -29,6 +29,7 @@ const Projects = () => {
                     githubLink={project.githubLink}
                     projectLink={project.projectLink}
                     key={project.key}
+                    flip={index % 2 === 0 ? false : true}
                 />
             ))}
 

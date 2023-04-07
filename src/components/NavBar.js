@@ -45,6 +45,7 @@ const Nav = styled.div`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 50px;
 
     box-sizing: border-box;
     

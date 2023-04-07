@@ -1,41 +1,41 @@
 import React from "react"
 import styled from "styled-components"
 
+// imag
 import gh from '../img/github.svg'
 import open from '../img/open.svg'
 
-// Components
-// import ProjectTag from "./ProjectTag"
 
 const Project = (props) => {
 
     return (
-        <Container>
+        <Container style={{
+            flexDirection: props.flip ? 'row-reverse' : 'row',
+        }} >
+
             <a href={props.projectLink} target="_blank" rel="noopener noreferrer">
                 <Image src={props.image} />
             </a>
 
-            <Info>
+            <Info
+                style={{
+                    marginLeft: props.flip ? '0' : '-120px',
+                    marginRight: props.flip ? '-120px' : '0',
+                    zIndex: props.flip ? '1' : '0',
+                    alignItems: props.flip ? 'flex-start' : 'flex-end',
+                }}>
                 <h2>{props.title}</h2>
 
-                <Text>
-                    {props.text}
-                </Text>
-
-                {/* <ProjectTag tag={props.tag} /> */}
+                <Text>{props.text}</Text>
 
                 {/* only render if there are any links */}
                 <Links>
-                    {
-                        props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)
-                    }
-                    {
-                        props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)
-                    }
+                    {props.githubLink ? (<a href={props.githubLink} target="_blank" rel="noopener noreferrer"><img src={gh} alt="github" /></a>) : (null)}
+                    {props.projectLink ? (<a href={props.projectLink} target="_blank" rel="noopener noreferrer"><img src={open} alt="project" /></a>) : (null)}
                 </Links>
-
             </Info>
-        </Container>
+
+        </Container >
     )
 }
 
@@ -57,11 +57,12 @@ const Info = styled.div`
     margin-left: -120px;
     max-width: 400px;
 
-    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & > h2 {
         margin: 0;
-        text-align: right;
 
         @media (max-width: 780px) {
             text-align: left;
@@ -69,7 +70,9 @@ const Info = styled.div`
     }
 
     @media (max-width: 780px) {
-        margin-left: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        align-items: normal !important;
     }
 `
 
@@ -83,8 +86,6 @@ const Text = styled.p`
 `
 
 const Links = styled.div`
-    display: flex;
-    justify-content: flex-end;
     margin: 16px 0;
 
     & > a {
@@ -95,6 +96,12 @@ const Links = styled.div`
             transform: scale(1.07);
         }
     }
+
+    @media (max-width: 780px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 `
 
 const Image = styled.img`
@@ -102,10 +109,6 @@ const Image = styled.img`
     max-width: 560px;
     height: auto;
     border-radius: 10px;
-
-    &:hover {
-        cursor: pointer;
-    }
 
     @media (max-width: 780px) {
         display: none;
