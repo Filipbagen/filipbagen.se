@@ -99,7 +99,7 @@ const ProjectList = [
         emoji: "🤖",
         title: "Virtual Guide",
         text: "My Bachelor project involved programming a virtual guide using sound-to-text conversion, an AI chatbot, and text-to-speech synthesis, alongside image analysis for user interaction. The project aimed to enhance visitors' experience at the exhibition, providing them with an interactive way to ask questions while showcasing the potential of AI and computer vision.",
-        image: 'img/rocket.png',
+        image: 'img/virtualguide.png',
         tags: ['Python', 'AI', 'Image analysis'],
         githubLink: 'https://github.com/Filipbagen/virtual-guide',
         key: 3
